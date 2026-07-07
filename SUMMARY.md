@@ -16,10 +16,10 @@
 * [08-系统samgr](08-xi-tong-samgr.md)
 * [09-HDF驱动框架](09-hdf-qu-dong-kuang-jia.md)
 * [10-启动流程](10-qi-dong-liu-cheng.md)
-* 11-跨进程IPC与Binder
+* [11-跨进程IPC与Binder](11-kua-jin-cheng-ipc-yu-binder/README.md)
   * [11-跨进程IPC](11-kua-jin-cheng-ipc.md)
   * [11-Binder机制](11-binder-ji-zhi.md)
-* 12-图形子系统
+* [12-图形子系统](12-tu-xing-zi-xi-tong/README.md)
   * [12-图形子系统-Linux图形显示系统](12-tu-xing-zi-xi-tong-linux-tu-xing-xian-shi-xi-tong.md)
   * [12-图形子系统-Linux图形显示系统之DRM](12-tu-xing-zi-xi-tong-linux-tu-xing-xian-shi-xi-tong-zhi-drm.md)
   * [12-图形子系统-OpenHarmony](12-tu-xing-zi-xi-tong-openharmony.md)
@@ -27,12 +27,12 @@
 * [13-窗口子系统](13-chuang-kou-zi-xi-tong.md)
 * [14-多模输入子系统](14-duo-mo-shu-ru-zi-xi-tong.md)
 * [15-媒体子系统](15-mei-ti-zi-xi-tong.md)
-* 分布式能力
+* [分布式能力](fen-bu-shi-neng-li/README.md)
   * [16-分布式软总线](16-fen-bu-shi-ruan-zong-xian.md)
   * [17-分布式数据管理](17-fen-bu-shi-shu-ju-guan-li.md)
   * [18-分布式硬件](18-fen-bu-shi-ying-jian.md)
   * [27-分布式任务调度](27-fen-bu-shi-ren-wu-diao-du.md)
-* 19-内核子系统
+* [19-内核子系统](19-nei-he-zi-xi-tong/README.md)
   * [19-内核子系统-轻量系统](19-nei-he-zi-xi-tong-qing-liang-xi-tong.md)
   * [19-内核子系统-小型系统](19-nei-he-zi-xi-tong-xiao-xing-xi-tong.md)
   * [19-内核子系统-标准系统Linux](19-nei-he-zi-xi-tong-biao-zhun-xi-tong-linux.md)
@@ -40,15 +40,14 @@
 * [20-DFX子系统](20-dfx-zi-xi-tong.md)
 * [21-XTS子系统](21-xts-zi-xi-tong.md)
 * [22-OTA升级子系统](22-ota-sheng-ji-zi-xi-tong.md)
-
-* 安全与权限
+* [安全与权限](an-quan-yu-quan-xian/README.md)
   * [23-安全子系统](23-an-quan-zi-xi-tong.md)
   * [23-权限与访问控制](23-quan-xian-guan-li-zi-xi-tong.md)
-* 应用框架
+* [应用框架](ying-yong-kuang-jia/README.md)
   * [24-元能力Ability框架](24-ying-yong-kuang-jia-ability.md)
   * [25-包管理子系统](25-bao-guan-li-zi-xi-tong.md)
 * [26-编译构建子系统](26-bian-yi-gou-jian-zi-xi-tong.md)
-* 系统基础服务
+* [系统基础服务](xi-tong-ji-chu-fu-wu/README.md)
   * [28-电源管理子系统](28-dian-yuan-guan-li-zi-xi-tong.md)
   * [29-通知与公共事件](29-tong-zhi-gong-gong-shi-jian.md)
   * [30-通信子系统](30-tong-xin-zi-xi-tong.md)

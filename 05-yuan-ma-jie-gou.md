@@ -4,33 +4,13 @@ description: 源码结构
 
 # 05-源码结构
 
-
-
-
-
 ## 源码目录基本结构
 
-
-
-
-
-![](assets/image-8-1-1.png)
-
-
-
-
+![](.gitbook/assets/image-8-1-1.png)
 
 ## 总结构
 
-
-
-
-
 由上到下
-
-
-
-
 
 ```sh
 
@@ -97,21 +77,9 @@ description: 源码结构
 
 ```
 
-
-
-
-
 ## 关键目录解析
 
-
-
-
-
 ### arkcompiler方舟运行时
-
-
-
-
 
 ```
 
@@ -130,15 +98,7 @@ description: 源码结构
 
 ```
 
-
-
-
-
 ### base--基础软件服务
-
-
-
-
 
 ```
 
@@ -475,15 +435,7 @@ description: 源码结构
 
 ```
 
-
-
-
-
 ### developtools开发工具集
-
-
-
-
 
 ```
 
@@ -526,15 +478,7 @@ description: 源码结构
 
 ```
 
-
-
-
-
 ### domains特定领域集
-
-
-
-
 
 ```
 
@@ -550,15 +494,7 @@ description: 源码结构
 
 ```
 
-
-
-
-
 ### drivers驱动相关
-
-
-
-
 
 ```
 
@@ -580,15 +516,7 @@ description: 源码结构
 
 ```
 
-
-
-
-
 ### foundation基础能力子系统集
-
-
-
-
 
 ```
 
@@ -930,6 +858,6 @@ description: 源码结构
 
 ## 相关阅读
 
-- [架构篇](04-jia-gou-pian.md)
-- [native库](06-native-ku.md)
-- [NAPI接口](07-napi-jie-kou.md)
+* [架构篇](04-jia-gou-pian.md)
+* [native库](06-native-ku.md)
+* [NAPI接口](07-napi-jie-kou.md)

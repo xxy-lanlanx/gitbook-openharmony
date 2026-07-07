@@ -4,103 +4,35 @@ description: 开发环境搭建篇
 
 # 02-开发环境搭建篇
 
-
-
-
-
 ## 获取代码&编译
-
-
-
-
 
 文档地址：[https://gitcode.com/openharmony/docs/blob/master/zh-cn/release-notes/Readme.md](https://gitcode.com/openharmony/docs/blob/master/zh-cn/release-notes/Readme.md)
 
-
-
-
-
 上面是每一个release的notes，获取对应版本代码。
-
-
-
-
 
 建议不使用master的代码，代码太新，版本激进，而且容易有编译失败的风险。
 
-
-
-
-
 以4.1.1 Release版本为例
-
-
-
-
 
 ### 代码拉取
 
-
-
-
-
 文档地址：[https://gitcode.com/openharmony/docs/blob/master/zh-cn/device-dev/quick-start/quickstart-pkg-sourcecode.md](https://gitcode.com/openharmony/docs/blob/master/zh-cn/device-dev/quick-start/quickstart-pkg-sourcecode.md)
-
-
-
-
-
-
-
-
-
-
 
 tag版本地址：[https://gitcode.com/openharmony/docs/blob/master/zh-cn/release-notes/OpenHarmony-v4.1.1-release.md](https://gitcode.com/openharmony/docs/blob/master/zh-cn/release-notes/OpenHarmony-v4.1.1-release.md)
 
-
-
-
-
-![](assets/image-1-1-1-1-1-1-1-1-1-1.png)
-
-
-
-
+![](.gitbook/assets/image-1-1-1-1-1-1-1-1-1-1.png)
 
 文档有详细的获取代码方式
 
-
-
-
-
 代码拉取后的结构
 
-
-
-
-
-![](assets/image-1-1-1-1-1-1-1-1-1-1-1.png)
-
-
-
-
+![](.gitbook/assets/image-1-1-1-1-1-1-1-1-1-1-1.png)
 
 后续会对源码结构再细化
 
-
-
-
-
 ### 编译工具环境
 
-
-
-
-
 {% code overflow="wrap" %}
-
-
 ```sh
 
 
@@ -141,25 +73,11 @@ sudo apt install gcc-arm-linux-gnueabi
 
 
 ```
-
-
 {% endcode %}
-
-
-
-
 
 官方工具环境在实际使用的时候会有部分问题，提供一版比较全面的工具环境，直接安装即可
 
-
-
-
-
 另外prebuilts不要忘记拉取，源码下直接执行
-
-
-
-
 
 ```sh
 
@@ -169,15 +87,7 @@ bash build/prebuilts_download.sh
 
 ```
 
-
-
-
-
 最后执行编译
-
-
-
-
 
 ```sh
 
@@ -187,39 +97,13 @@ bash build/prebuilts_download.sh
 
 ```
 
-
-
-
-
-![](assets/image-1-1-1-1-1-1-1-1-1.png)
-
-
-
-
+![](.gitbook/assets/image-1-1-1-1-1-1-1-1-1.png)
 
 编译成功
 
-
-
-
-
 ## 使用docker方式编译
 
-
-
-
-
 文档地址：[https://gitcode.com/openharmony/docs/blob/master/zh-cn/device-dev/get-code/gettools-acquire.md](https://gitcode.com/openharmony/docs/blob/master/zh-cn/device-dev/get-code/gettools-acquire.md)
-
-
-
-
-
-
-
-
-
-
 
 其他和正常使用一样
 
@@ -245,9 +129,9 @@ repo init -u https://gitcode.com/openharmony/manifest.git \
 repo sync -c -j8
 ```
 
-- `master` 分支代码较新、变更激进，容易出现编译失败或接口不兼容；
-- 每个版本都有对应的 Release Notes 与 tag（如 `OpenHarmony-v4.1.1-release`），按需求选择；
-- 拉取后的目录即 OpenHarmony 源码根，后续章节会细化其结构。
+* `master` 分支代码较新、变更激进，容易出现编译失败或接口不兼容；
+* 每个版本都有对应的 Release Notes 与 tag（如 `OpenHarmony-v4.1.1-release`），按需求选择；
+* 拉取后的目录即 OpenHarmony 源码根，后续章节会细化其结构。
 
 ## 构建工具 hb
 
@@ -272,8 +156,8 @@ bash build/prebuilts_download.sh
 
 ## 不同系统类型的环境差异
 
-- **标准系统（Linux 内核）**：需要完整的 LLVM/Clang 工具链与较大的构建资源；
-- **轻量/小型系统（LiteOS-M / LiteOS-A）**：可使用更轻量的工具链，部分场景通过 `hb build` 的 lite 流程构建，对主机资源要求更低。
+* **标准系统（Linux 内核）**：需要完整的 LLVM/Clang 工具链与较大的构建资源；
+* **轻量/小型系统（LiteOS-M / LiteOS-A）**：可使用更轻量的工具链，部分场景通过 `hb build` 的 lite 流程构建，对主机资源要求更低。
 
 ## 使用 Docker 方式
 
@@ -281,17 +165,17 @@ bash build/prebuilts_download.sh
 
 ## 常见环境问题排查
 
-| 现象 | 可能原因 | 处理 |
-| --- | --- | --- |
-| `repo sync` 失败/中断 | 网络/代理不稳定 | 重试，必要时配置代理或更换镜像源 |
-| 编译报找不到工具链 | 未执行 prebuilts 下载 | 先运行 `build/prebuilts_download.sh` |
-| 磁盘空间不足 | 全量代码+产物需 200GB+ | `df -h` 检查，清理或扩容 |
-| 大文件缺失 | 未安装 git-lfs | 安装 git-lfs 后重新同步 |
-| 编译 OOM / 卡死 | 并行度过高 | 降低并行数（如 `hb build -j 4`） |
-| Python 版本相关报错 | Ubuntu 版本与预期不符 | 20.04 用 Python 3.9，18.04 用 3.8 |
+| 现象                | 可能原因             | 处理                                |
+| ----------------- | ---------------- | --------------------------------- |
+| `repo sync` 失败/中断 | 网络/代理不稳定         | 重试，必要时配置代理或更换镜像源                  |
+| 编译报找不到工具链         | 未执行 prebuilts 下载 | 先运行 `build/prebuilts_download.sh` |
+| 磁盘空间不足            | 全量代码+产物需 200GB+  | `df -h` 检查，清理或扩容                  |
+| 大文件缺失             | 未安装 git-lfs      | 安装 git-lfs 后重新同步                  |
+| 编译 OOM / 卡死       | 并行度过高            | 降低并行数（如 `hb build -j 4`）          |
+| Python 版本相关报错     | Ubuntu 版本与预期不符   | 20.04 用 Python 3.9，18.04 用 3.8    |
 
 ## 相关阅读
 
-- [如何学习openharmony？](01-ru-he-xue-xi-openharmony.md)
-- [开发工具篇](03-kai-fa-gong-ju-pian.md)
-- [源码结构](05-yuan-ma-jie-gou.md)
+* [如何学习openharmony？](01-ru-he-xue-xi-openharmony.md)
+* [开发工具篇](03-kai-fa-gong-ju-pian.md)
+* [源码结构](05-yuan-ma-jie-gou.md)
