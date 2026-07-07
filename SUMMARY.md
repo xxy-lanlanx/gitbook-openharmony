@@ -27,9 +27,11 @@
 * [13-窗口子系统](13-chuang-kou-zi-xi-tong.md)
 * [14-多模输入子系统](14-duo-mo-shu-ru-zi-xi-tong.md)
 * [15-媒体子系统](15-mei-ti-zi-xi-tong.md)
-* [16-分布式软总线](16-fen-bu-shi-ruan-zong-xian.md)
-* [17-分布式数据管理](17-fen-bu-shi-shu-ju-guan-li.md)
-* [18-分布式硬件](18-fen-bu-shi-ying-jian.md)
+* 分布式能力
+  * [16-分布式软总线](16-fen-bu-shi-ruan-zong-xian.md)
+  * [17-分布式数据管理](17-fen-bu-shi-shu-ju-guan-li.md)
+  * [18-分布式硬件](18-fen-bu-shi-ying-jian.md)
+  * [27-分布式任务调度](27-fen-bu-shi-ren-wu-diao-du.md)
 * 19-内核子系统
   * [19-内核子系统-轻量系统](19-nei-he-zi-xi-tong-qing-liang-xi-tong.md)
   * [19-内核子系统-小型系统](19-nei-he-zi-xi-tong-xiao-xing-xi-tong.md)
@@ -38,3 +40,19 @@
 * [20-DFX子系统](20-dfx-zi-xi-tong.md)
 * [21-XTS子系统](21-xts-zi-xi-tong.md)
 * [22-OTA升级子系统](22-ota-sheng-ji-zi-xi-tong.md)
+
+* 安全与权限
+  * [23-安全子系统](23-an-quan-zi-xi-tong.md)
+  * [23-权限与访问控制](23-quan-xian-guan-li-zi-xi-tong.md)
+* 应用框架
+  * [24-元能力Ability框架](24-ying-yong-kuang-jia-ability.md)
+  * [25-包管理子系统](25-bao-guan-li-zi-xi-tong.md)
+* [26-编译构建子系统](26-bian-yi-gou-jian-zi-xi-tong.md)
+* 系统基础服务
+  * [28-电源管理子系统](28-dian-yuan-guan-li-zi-xi-tong.md)
+  * [29-通知与公共事件](29-tong-zhi-gong-gong-shi-jian.md)
+  * [30-通信子系统](30-tong-xin-zi-xi-tong.md)
+  * [31-位置服务子系统](31-wei-zhi-fu-wu-zi-xi-tong.md)
+  * [32-全球化与国际化](32-quan-qiu-hua-zi-xi-tong.md)
+  * [33-文件与存储子系统](33-wen-jian-cun-chu-zi-xi-tong.md)
+  * [34-帐号与用户身份](34-zhang-hao-yu-shen-fen.md)
