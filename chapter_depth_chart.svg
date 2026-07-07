@@ -1,0 +1,117 @@
+<svg viewBox="0 0 680 595" xmlns="http://www.w3.org/2000/svg" font-family="Menlo,Consolas,monospace" font-size="11">
+<rect width="680" height="595" fill="#0f172a"/>
+<text x="20" y="24" fill="#e2e8f0" font-size="15" font-weight="bold">OpenHarmony 书籍 · 各章节中文内容量（CJK 字数）</text>
+<text x="18" y="51" fill="#cbd5e1">13-chuang-kou-zi-xi-tong</text>
+<rect x="250" y="42" width="360" height="11" rx="2" fill="#3b82f6"/>
+<text x="615" y="51" fill="#94a3b8">2471</text>
+<text x="18" y="66" fill="#cbd5e1">05-yuan-ma-jie-gou</text>
+<rect x="250" y="57" width="199" height="11" rx="2" fill="#22c55e"/>
+<text x="454" y="66" fill="#94a3b8">1372</text>
+<text x="18" y="81" fill="#cbd5e1">14-duo-mo-shu-ru-zi-xi-tong</text>
+<rect x="250" y="72" width="183" height="11" rx="2" fill="#22c55e"/>
+<text x="438" y="81" fill="#94a3b8">1260</text>
+<text x="18" y="96" fill="#cbd5e1">xu-lun</text>
+<rect x="250" y="87" width="178" height="11" rx="2" fill="#22c55e"/>
+<text x="433" y="96" fill="#94a3b8">1226</text>
+<text x="18" y="111" fill="#cbd5e1">cao-zuo-xi-tong</text>
+<rect x="250" y="102" width="171" height="11" rx="2" fill="#22c55e"/>
+<text x="426" y="111" fill="#94a3b8">1176</text>
+<text x="18" y="126" fill="#cbd5e1">19-nei-he-zi-xi-tong-xiao-xin…</text>
+<rect x="250" y="117" width="163" height="11" rx="2" fill="#22c55e"/>
+<text x="418" y="126" fill="#94a3b8">1125</text>
+<text x="18" y="141" fill="#cbd5e1">09hdf-qu-dong-kuang-jia</text>
+<rect x="250" y="132" width="158" height="11" rx="2" fill="#22c55e"/>
+<text x="413" y="141" fill="#94a3b8">1086</text>
+<text x="18" y="156" fill="#cbd5e1">18-fen-bu-shi-ying-jian</text>
+<rect x="250" y="147" width="138" height="11" rx="2" fill="#22c55e"/>
+<text x="393" y="156" fill="#94a3b8">949</text>
+<text x="18" y="171" fill="#cbd5e1">12-tu-xing-zi-xi-tong-linux-t…</text>
+<rect x="250" y="162" width="136" height="11" rx="2" fill="#22c55e"/>
+<text x="391" y="171" fill="#94a3b8">936</text>
+<text x="18" y="186" fill="#cbd5e1">04-jia-gou-pian</text>
+<rect x="250" y="177" width="135" height="11" rx="2" fill="#22c55e"/>
+<text x="390" y="186" fill="#94a3b8">930</text>
+<text x="18" y="201" fill="#cbd5e1">15-mei-ti-zi-xi-tong</text>
+<rect x="250" y="192" width="134" height="11" rx="2" fill="#22c55e"/>
+<text x="389" y="201" fill="#94a3b8">925</text>
+<text x="18" y="216" fill="#cbd5e1">01-ru-he-xue-xi-openharmony</text>
+<rect x="250" y="207" width="129" height="11" rx="2" fill="#22c55e"/>
+<text x="384" y="216" fill="#94a3b8">887</text>
+<text x="18" y="231" fill="#cbd5e1">11-kua-jin-cheng-ipc</text>
+<rect x="250" y="222" width="126" height="11" rx="2" fill="#22c55e"/>
+<text x="381" y="231" fill="#94a3b8">870</text>
+<text x="18" y="246" fill="#cbd5e1">10-qi-dong-liu-cheng</text>
+<rect x="250" y="237" width="125" height="11" rx="2" fill="#22c55e"/>
+<text x="380" y="246" fill="#94a3b8">864</text>
+<text x="18" y="261" fill="#cbd5e1">19-nei-he-zi-xi-tong-biao-zhu…</text>
+<rect x="250" y="252" width="118" height="11" rx="2" fill="#22c55e"/>
+<text x="373" y="261" fill="#94a3b8">815</text>
+<text x="18" y="276" fill="#cbd5e1">19-nei-he-zi-xi-tong-linux-ne…</text>
+<rect x="250" y="267" width="118" height="11" rx="2" fill="#22c55e"/>
+<text x="373" y="276" fill="#94a3b8">810</text>
+<text x="18" y="291" fill="#cbd5e1">16-fen-bu-shi-ruan-zong-xian</text>
+<rect x="250" y="282" width="117" height="11" rx="2" fill="#22c55e"/>
+<text x="372" y="291" fill="#94a3b8">809</text>
+<text x="18" y="306" fill="#cbd5e1">08-xi-tong-samgr</text>
+<rect x="250" y="297" width="111" height="11" rx="2" fill="#f59e0b"/>
+<text x="366" y="306" fill="#94a3b8">762</text>
+<text x="18" y="321" fill="#cbd5e1">20dfx-zi-xi-tong</text>
+<rect x="250" y="312" width="110" height="11" rx="2" fill="#f59e0b"/>
+<text x="365" y="321" fill="#94a3b8">759</text>
+<text x="18" y="336" fill="#cbd5e1">07napi-jie-kou</text>
+<rect x="250" y="327" width="110" height="11" rx="2" fill="#f59e0b"/>
+<text x="365" y="336" fill="#94a3b8">758</text>
+<text x="18" y="351" fill="#cbd5e1">06native-ku</text>
+<rect x="250" y="342" width="104" height="11" rx="2" fill="#f59e0b"/>
+<text x="359" y="351" fill="#94a3b8">717</text>
+<text x="18" y="366" fill="#cbd5e1">22ota-sheng-ji-zi-xi-tong</text>
+<rect x="250" y="357" width="102" height="11" rx="2" fill="#f59e0b"/>
+<text x="357" y="366" fill="#94a3b8">702</text>
+<text x="18" y="381" fill="#cbd5e1">11binder-ji-zhi</text>
+<rect x="250" y="372" width="98" height="11" rx="2" fill="#f59e0b"/>
+<text x="353" y="381" fill="#94a3b8">673</text>
+<text x="18" y="396" fill="#cbd5e1">17-fen-bu-shi-shu-ju-guan-li</text>
+<rect x="250" y="387" width="97" height="11" rx="2" fill="#f59e0b"/>
+<text x="352" y="396" fill="#94a3b8">672</text>
+<text x="18" y="411" fill="#cbd5e1">12-tu-xing-zi-xi-tong-gpu-shi…</text>
+<rect x="250" y="402" width="83" height="11" rx="2" fill="#f59e0b"/>
+<text x="338" y="411" fill="#94a3b8">574</text>
+<text x="18" y="426" fill="#cbd5e1">19-nei-he-zi-xi-tong-qing-lia…</text>
+<rect x="250" y="417" width="69" height="11" rx="2" fill="#f59e0b"/>
+<text x="324" y="426" fill="#94a3b8">475</text>
+<text x="18" y="441" fill="#cbd5e1">12-tu-xing-zi-xi-tong-linux-t…</text>
+<rect x="250" y="432" width="60" height="11" rx="2" fill="#f59e0b"/>
+<text x="315" y="441" fill="#94a3b8">414</text>
+<text x="18" y="456" fill="#cbd5e1">zi-xu</text>
+<rect x="250" y="447" width="42" height="11" rx="2" fill="#ef4444"/>
+<text x="297" y="456" fill="#94a3b8">295</text>
+<text x="18" y="471" fill="#cbd5e1">03-kai-fa-gong-ju-pian</text>
+<rect x="250" y="462" width="42" height="11" rx="2" fill="#ef4444"/>
+<text x="297" y="471" fill="#94a3b8">292</text>
+<text x="18" y="486" fill="#cbd5e1">README</text>
+<rect x="250" y="477" width="40" height="11" rx="2" fill="#ef4444"/>
+<text x="295" y="486" fill="#94a3b8">280</text>
+<text x="18" y="501" fill="#cbd5e1">07napi-jie-kou-aki</text>
+<rect x="250" y="492" width="40" height="11" rx="2" fill="#ef4444"/>
+<text x="295" y="501" fill="#94a3b8">276</text>
+<text x="18" y="516" fill="#cbd5e1">12-tu-xing-zi-xi-tong-openhar…</text>
+<rect x="250" y="507" width="39" height="11" rx="2" fill="#ef4444"/>
+<text x="294" y="516" fill="#94a3b8">270</text>
+<text x="18" y="531" fill="#cbd5e1">21xts-zi-xi-tong</text>
+<rect x="250" y="522" width="34" height="11" rx="2" fill="#ef4444"/>
+<text x="289" y="531" fill="#94a3b8">239</text>
+<text x="18" y="546" fill="#cbd5e1">02-kai-fa-huan-jing-da-jian-p…</text>
+<rect x="250" y="537" width="32" height="11" rx="2" fill="#ef4444"/>
+<text x="287" y="546" fill="#94a3b8">221</text>
+<text x="18" y="561" fill="#cbd5e1">mu-lu</text>
+<rect x="250" y="552" width="16" height="11" rx="2" fill="#ef4444"/>
+<text x="271" y="561" fill="#94a3b8">110</text>
+<rect x="20" y="572" width="10" height="10" fill="#3b82f6"/>
+<text x="34" y="581" fill="#94a3b8">>=1500</text>
+<rect x="170" y="572" width="10" height="10" fill="#22c55e"/>
+<text x="184" y="581" fill="#94a3b8">800-1499</text>
+<rect x="320" y="572" width="10" height="10" fill="#f59e0b"/>
+<text x="334" y="581" fill="#94a3b8">400-799</text>
+<rect x="470" y="572" width="10" height="10" fill="#ef4444"/>
+<text x="484" y="581" fill="#94a3b8"><400 偏薄</text>
+</svg>

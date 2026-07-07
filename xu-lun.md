@@ -1,4 +1,8 @@
 ---
+description: 绪论
+---
+
+---
 description: >-
   个人认为如同魔幻一样的openharmony开启。回想起来，openharmony能够一步步做到现在的程度，真的太不容易了，摸索，困难，弯路太多了，我们如此，其他子系统的小伙伴也是一样。
 ---
@@ -39,7 +43,7 @@ description: >-
 
 ## 架构期：
 
-<figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+![](assets/image-3-1-1-1-1-1-1.png)
 
 现在回想起来才知道，架构的重要性，这个是openharmony的总架构，记得从我接触openharmony开始，这个架构图应该就没有几乎变过，一路演进都是依照这个来指导前行。
 
@@ -88,7 +92,8 @@ description: >-
 千帆计划后，自己还是很开心看到这么多的APP，生态慢慢的丰富起来了，中国自有的openharmony，加油。
 
 
-
+
+
 
 
 

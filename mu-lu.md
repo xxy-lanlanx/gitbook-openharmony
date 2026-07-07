@@ -1,30 +1,41 @@
 # 目录
 
-* 主页
-* 自序
-* 绪论
-* 操作系统
-  * 01 如何学习OpenHarmony？
-  * 02 开发环境搭建
-  * 03 开发工具篇
-  * 04 架构篇
-  * 05 源码结构
-  * 06 Native库
-  * 07 NAPI接口
-  * 07 NAPI接口-aki
-  * 08 系统samgr
-  * 09 HDF驱动框架
-  * 10 启动流程
-  * 11 跨进程IPC
-  * 11 Binder机制
-  * 12 图形子系统
-  * 13 窗口子系统
-  * 14 多模输入子系统
-  * 15 媒体子系统
-  * 16 分布式软总线
-  * 17 分布式数据管理
-  * 18 分布式硬件
-  * 19 内核子系统
-  * 20 DFX子系统
-  * 21 XTS子系统
-  * 22 OTA升级子系统
+> 本书目录（与左侧导航一致）。
+
+* [主页](README.md)
+* [自序](zi-xu.md)
+* [绪论](xu-lun.md)
+* [操作系统](cao-zuo-xi-tong.md)
+* [01-如何学习OpenHarmony？](01-ru-he-xue-xi-openharmony.md)
+* [02-开发环境搭建篇](02-kai-fa-huan-jing-da-jian-pian.md)
+* [03-开发工具篇](03-kai-fa-gong-ju-pian.md)
+* [04-架构篇](04-jia-gou-pian.md)
+* [05-源码结构](05-yuan-ma-jie-gou.md)
+* [06-Native库](06-native-ku.md)
+* [07-NAPI接口](07-napi-jie-kou.md)
+* [07-NAPI接口-aki](07-napi-jie-kou-aki.md)
+* [08-系统samgr](08-xi-tong-samgr.md)
+* [09-HDF驱动框架](09-hdf-qu-dong-kuang-jia.md)
+* [10-启动流程](10-qi-dong-liu-cheng.md)
+* 11-跨进程IPC与Binder
+  * [11-跨进程IPC](11-kua-jin-cheng-ipc.md)
+  * [11-Binder机制](11-binder-ji-zhi.md)
+* 12-图形子系统
+  * [12-图形子系统-Linux图形显示系统](12-tu-xing-zi-xi-tong-linux-tu-xing-xian-shi-xi-tong.md)
+  * [12-图形子系统-Linux图形显示系统之DRM](12-tu-xing-zi-xi-tong-linux-tu-xing-xian-shi-xi-tong-zhi-drm.md)
+  * [12-图形子系统-OpenHarmony](12-tu-xing-zi-xi-tong-openharmony.md)
+  * [12-图形子系统-GPU适配](12-tu-xing-zi-xi-tong-gpu-shi-pei.md)
+* [13-窗口子系统](13-chuang-kou-zi-xi-tong.md)
+* [14-多模输入子系统](14-duo-mo-shu-ru-zi-xi-tong.md)
+* [15-媒体子系统](15-mei-ti-zi-xi-tong.md)
+* [16-分布式软总线](16-fen-bu-shi-ruan-zong-xian.md)
+* [17-分布式数据管理](17-fen-bu-shi-shu-ju-guan-li.md)
+* [18-分布式硬件](18-fen-bu-shi-ying-jian.md)
+* 19-内核子系统
+  * [19-内核子系统-轻量系统](19-nei-he-zi-xi-tong-qing-liang-xi-tong.md)
+  * [19-内核子系统-小型系统](19-nei-he-zi-xi-tong-xiao-xing-xi-tong.md)
+  * [19-内核子系统-标准系统Linux](19-nei-he-zi-xi-tong-biao-zhun-xi-tong-linux.md)
+  * [19-内核子系统-Linux内核架构](19-nei-he-zi-xi-tong-linux-nei-he-jia-gou.md)
+* [20-DFX子系统](20-dfx-zi-xi-tong.md)
+* [21-XTS子系统](21-xts-zi-xi-tong.md)
+* [22-OTA升级子系统](22-ota-sheng-ji-zi-xi-tong.md)

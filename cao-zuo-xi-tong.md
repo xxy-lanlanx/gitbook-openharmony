@@ -1,3 +1,11 @@
+---
+description: 操作系统
+---
+
+---
+description: 操作系统
+---
+
 # 操作系统
 
 ## 什么是操作系统
@@ -10,21 +18,21 @@
 
 ### Linux架构
 
-<figure><img src=".gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
+![](assets/image-74.png)
 
 ### Android架构
 
-<figure><img src=".gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
+![](assets/image-77.png)
 
-<figure><img src=".gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>
+![](assets/image-78.png)
 
 ### window NT架构
 
-<figure><img src=".gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
+![](assets/image-75.png)
 
 IOS架构-Darwin 架构
 
-<figure><img src=".gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
+![](assets/image-76.png)
 
 Darwin的内核是XNU，XNU is Not Unix。XNU是两种技术的混合体，Mach和BSD。BSD层确保了Darwin系统的UNIX特性，真正的内核是Mach，但是对外部隐藏。BSD以上属于用户态，所有的内容都可以被应用程序访问，而应用程序不能访问内核态。当需要从用户态切换到内核态的时候，需要通过mach trap实现切换。
 
@@ -32,13 +40,13 @@ Darwin的内核是XNU，XNU is Not Unix。XNU是两种技术的混合体，Mach�
 
 借鉴澎湃OS白皮书，新一代的操作系统，按发展路径和阶段可以分为四大类：一是由传 统的嵌入式 RTOS 发展而来；二是基于传统操作系统进行的“剪裁”和定制；三是专门面向 物联网研发的操作系统；四是新一代统一型操作系统，通常称为跨设备分布式操作系统。
 
-<figure><img src=".gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
+![](assets/image-68.png)
 
 ## 发展趋势（多内核共存）
 
 关键字：跨端、多OS内核、统一可信安全、AI
 
-<figure><img src=".gitbook/assets/image (69).png" alt=""><figcaption></figcaption></figure>
+![](assets/image-69.png)
 
 未来的物联网 OS，会是「多内核共存」的形式，每种内核负 责解决不同场景下的问题；这种架构下的 OS，会整合如 Linux、Zephyr 等不同类型 的内核以及和内核密切相关的框架和运行时，内核组件化的趋势逐渐开始形成。内核 组件化的本质还是为了解决物联网应用场景的扩展和不断增加的设备种类所带来的碎 片化问题。
 
@@ -50,15 +58,15 @@ Xiaomi HyperOS 的技术体系下，Vela 定位为轻载硬件资源下，使用
 
 文档借鉴自《小米澎湃OS技术白皮书》
 
-<figure><img src=".gitbook/assets/image (70).png" alt=""><figcaption></figcaption></figure>
+![](assets/image-70.png)
 
 ### 技术架构
 
-<figure><img src=".gitbook/assets/image (71).png" alt=""><figcaption></figcaption></figure>
+![](assets/image-71.png)
 
 ### 异构多核
 
-<figure><img src=".gitbook/assets/image (72).png" alt=""><figcaption></figcaption></figure>
+![](assets/image-72.png)
 
 ## OpenHarmony
 
@@ -70,7 +78,7 @@ OpenHarmony 是由开放原子开源基金会（OpenAtom）孵化、面向「全
 
 ## 技术架构
 
-<figure><img src=".gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
+![](assets/image-73.png)
 
 OpenHarmony 整体采用分层架构（自上而下）：
 

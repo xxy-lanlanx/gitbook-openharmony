@@ -1,0 +1,10 @@
+{
+  "title": "OpenHarmony 技术解析",
+  "description": "从如何学习、开发环境、架构到各子系统与内核，系统讲解 OpenHarmony",
+  "language": "zh-hans",
+  "gitbook": ">=3.2.3",
+  "structure": {
+    "readme": "README.md",
+    "summary": "SUMMARY.md"
+  }
+}
