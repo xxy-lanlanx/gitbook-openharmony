@@ -223,6 +223,73 @@ bash build/prebuilts_download.sh
 
 其他和正常使用一样
 
+## 总体流程
+
+搭建一套可用的 OpenHarmony 开发环境，通常遵循以下步骤：
+
+1. 准备一台 Linux 构建主机（推荐 Ubuntu 20.04/22.04，内存 ≥ 16GB，磁盘 ≥ 200GB）；
+2. 安装 `repo` 与基础依赖工具；
+3. 获取指定版本的源码（建议基于 release tag，而非 master）；
+4. 下载 `prebuilts`（编译所需的工具链与二进制）；
+5. 用 `hb set` 选择目标产品；
+6. 执行编译（`build.sh` 或 `hb build`）；
+7. 烧录镜像到开发板 / 运行模拟器验证。
+
+## 代码获取：repo 与版本选择
+
+OpenHarmony 由数百个独立的 git 仓库组成，使用 `repo` 做统一清单管理。为避免编译失败与接口不稳定，强烈建议基于 **release 标签** 获取代码，而不是跟踪 master：
+
+```bash
+repo init -u https://gitcode.com/openharmony/manifest.git \
+         -b OpenHarmony-4.1.1-Release --no-clone-bundle
+repo sync -c -j8
+```
+
+- `master` 分支代码较新、变更激进，容易出现编译失败或接口不兼容；
+- 每个版本都有对应的 Release Notes 与 tag（如 `OpenHarmony-v4.1.1-release`），按需求选择；
+- 拉取后的目录即 OpenHarmony 源码根，后续章节会细化其结构。
+
+## 构建工具 hb
+
+`hb` 是 OpenHarmony 的命令行构建入口，底层封装了 GN（描述构建图）与 Ninja（执行构建）。常用命令：
+
+```bash
+hb set      # 交互式选择产品（如 rk3568、hi3516dv300）
+hb env      # 查看当前产品与环境信息
+hb build    # 全量构建当前产品
+hb build -T //test/xts/acts   # 仅构建某个模块/目标
+hb clean    # 清理构建产物
+```
+
+## prebuilts 与编译
+
+`prebuilts` 包含 Clang 工具链、sysroot、编译脚本等二进制，必须提前下载，否则编译会找不到工具链：
+
+```bash
+bash build/prebuilts_download.sh
+./build.sh --product-name rk3568
+```
+
+## 不同系统类型的环境差异
+
+- **标准系统（Linux 内核）**：需要完整的 LLVM/Clang 工具链与较大的构建资源；
+- **轻量/小型系统（LiteOS-M / LiteOS-A）**：可使用更轻量的工具链，部分场景通过 `hb build` 的 lite 流程构建，对主机资源要求更低。
+
+## 使用 Docker 方式
+
+官方提供 Docker 镜像，预置了完整的构建环境，能有效规避"在我机器上能编"的环境差异问题。进入容器后的构建步骤与上面一致。
+
+## 常见环境问题排查
+
+| 现象 | 可能原因 | 处理 |
+| --- | --- | --- |
+| `repo sync` 失败/中断 | 网络/代理不稳定 | 重试，必要时配置代理或更换镜像源 |
+| 编译报找不到工具链 | 未执行 prebuilts 下载 | 先运行 `build/prebuilts_download.sh` |
+| 磁盘空间不足 | 全量代码+产物需 200GB+ | `df -h` 检查，清理或扩容 |
+| 大文件缺失 | 未安装 git-lfs | 安装 git-lfs 后重新同步 |
+| 编译 OOM / 卡死 | 并行度过高 | 降低并行数（如 `hb build -j 4`） |
+| Python 版本相关报错 | Ubuntu 版本与预期不符 | 20.04 用 Python 3.9，18.04 用 3.8 |
+
 ## 相关阅读
 
 - [如何学习openharmony？](01-ru-he-xue-xi-openharmony.md)
