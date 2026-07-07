@@ -1,4 +1,4 @@
-# 15-媒体子系统
+﻿# 15-媒体子系统
 
 ## 简介
 
@@ -16,7 +16,7 @@
 
 * **Media**: 为应用提供播放、录制等接口，通过跨进程调用或直接调用方式，调用媒体引擎Gstreamer、Histreamer或其它引擎。
   * mini设备上，Media部件调用Histreamer支持音频播放等功能。
-  * small设备上，Media部件调用recorder\_lite支持音视频录制，默认调用player\_lite支持音视频播放，通过设置系统属性变量debug.media\_service.histreamer为1使用histreamer。详细设置方法参见[syspara系统属性组件使用说明](https://gitee.com/openharmony/docs/blob/master/zh-cn/device-dev/subsystems/subsys-boot-init-sysparam.md)或者参见[syspara模块代码](https://gitee.com/openharmony/startup\_syspara\_lite)。
+  * small设备上，Media部件调用recorder\_lite支持音视频录制，默认调用player\_lite支持音视频播放，通过设置系统属性变量debug.media\_service.histreamer为1使用histreamer。详细设置方法参见[syspara系统属性组件使用说明](https://gitcode.com/openharmony/docs/blob/master/zh-cn/device-dev/subsystems/subsys-boot-init-sysparam.md)或者参见[syspara模块代码](https://gitcode.com/openharmony/startup\_syspara\_lite)。
   * standard设备上，Media部件调用Gstreamer支持音视频播放、音视频录制。
 * **Audio**: Audio部件支持音频输入输出、策略管理、音频焦点管理等功能。
 * **Camera**: Camera部件提供相机操作接口，支持预览、拍照、录像。
@@ -50,5 +50,4 @@ gstreamer跟ffmpeg一样，也是一个媒体框架，可以实现采集，编�
 ### 框架
 
 <figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src=".gitbook/assets/1719478519308.png" alt="" width="177"><figcaption></figcaption></figure>
+

@@ -15,6 +15,5 @@ description: 个人的一点感想
 偶然的机会，突然有个HR给我打了个电话：“我们现在有个项目，你想不想来参与一下”，我回答道：“什么项目啊？”，命运的齿轮悄然转动。
 
 原来我也可以尽一份力，发那么一点光。
-
-<figure><img src=".gitbook/assets/1719478519308.png" alt="" width="177"><figcaption></figcaption></figure>
+
 

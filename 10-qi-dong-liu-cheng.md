@@ -121,6 +121,5 @@ init进程启动时，首先完成系统初始化工作，然后开始解析配�
 ## 系统参数 <a href="#xi-tong-can-shu" id="xi-tong-can-shu"></a>
 
 使用文档：[https://docs.openharmony.cn/pages/v4.0/zh-cn/device-dev/subsystems/subsys-boot-init-sysparam.md](https://docs.openharmony.cn/pages/v4.0/zh-cn/device-dev/subsystems/subsys-boot-init-sysparam.md)
-
-<figure><img src=".gitbook/assets/1719478519308.png" alt="" width="177"><figcaption></figcaption></figure>
+
 

@@ -43,5 +43,4 @@ libdrm的作用就是将内核功能封装成 一系列的open/close/ioctl 等�
 是linux内核对显示框架进行分层设计的思想，相比于直接操作fb，drm框架提供更多的功能，包含图层合成、CMA、VSYNC等，而且架构更方便驱动人员维护和使用。
 
 <figure><img src=".gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src=".gitbook/assets/1719478519308.png" alt="" width="177"><figcaption></figcaption></figure>
+

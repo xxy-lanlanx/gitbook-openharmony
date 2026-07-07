@@ -1,4 +1,4 @@
----
+﻿---
 description: 通过平台解耦、内核解耦，来达到兼容不同内核，统一平台底座的目的
 ---
 
@@ -8,7 +8,7 @@ description: 通过平台解耦、内核解耦，来达到兼容不同内核，�
 
 OpenHarmony 系统 HDF 驱动框架采用 C 语言面向对象编程模型构建，通过平台解耦、内核解耦，来达到兼容不同内核，统一平台底座的目的，从而帮助开发者实现驱动一次开发，多系统部署到的效果。
 
-官方文档：[https://gitee.com/openharmony/docs/blob/master/zh-cn/readme/%E9%A9%B1%E5%8A%A8%E5%AD%90%E7%B3%BB%E7%BB%9F.md](https://gitee.com/openharmony/docs/blob/master/zh-cn/readme/%E9%A9%B1%E5%8A%A8%E5%AD%90%E7%B3%BB%E7%BB%9F.md)
+官方文档：[https://gitcode.com/openharmony/docs/blob/master/zh-cn/readme/%E9%A9%B1%E5%8A%A8%E5%AD%90%E7%B3%BB%E7%BB%9F.md](https://gitcode.com/openharmony/docs/blob/master/zh-cn/readme/%E9%A9%B1%E5%8A%A8%E5%AD%90%E7%B3%BB%E7%BB%9F.md)
 
 ## 架构
 
@@ -139,5 +139,4 @@ peripheral HDI接口实现
 ### 体系结构
 
 <figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src=".gitbook/assets/1719478519308.png" alt="" width="177"><figcaption></figcaption></figure>
+

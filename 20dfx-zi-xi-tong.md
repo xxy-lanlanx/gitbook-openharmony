@@ -1,4 +1,4 @@
-# 20-DFX子系统
+﻿# 20-DFX子系统
 
 ## 简介
 
@@ -20,6 +20,5 @@
 
 <figure><img src=".gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
 
-参考文档：[https://gitee.com/openharmony/docs/blob/master/zh-cn/readme/DFX%E5%AD%90%E7%B3%BB%E7%BB%9F.md](https://gitee.com/openharmony/docs/blob/master/zh-cn/readme/DFX%E5%AD%90%E7%B3%BB%E7%BB%9F.md)
-
-<figure><img src=".gitbook/assets/1719478519308.png" alt="" width="177"><figcaption></figcaption></figure>
+参考文档：[https://gitcode.com/openharmony/docs/blob/master/zh-cn/readme/DFX%E5%AD%90%E7%B3%BB%E7%BB%9F.md](https://gitcode.com/openharmony/docs/blob/master/zh-cn/readme/DFX%E5%AD%90%E7%B3%BB%E7%BB%9F.md)
+

@@ -56,5 +56,4 @@ OpenHarmony LiteOS-M内核架构包含硬件相关层以及硬件无关层，如
 ├── utils                # 通用公共目录
 
 ```
-
-<figure><img src=".gitbook/assets/1719478519308.png" alt="" width="177"><figcaption></figcaption></figure>
+

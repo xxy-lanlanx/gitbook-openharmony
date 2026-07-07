@@ -1,4 +1,4 @@
----
+﻿---
 description: 跨进程通信
 ---
 
@@ -14,7 +14,7 @@ Binder机制通常采用客户端-服务器（Client-Server）模型，服务请
 
 <figure><img src=".gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
 
-官方文档：[https://gitee.com/openharmony/systemabilitymgr\_safwk](https://gitee.com/openharmony/systemabilitymgr\_safwk)
+官方文档：[https://gitcode.com/openharmony/systemabilitymgr\_safwk](https://gitcode.com/openharmony/systemabilitymgr\_safwk)
 
 
 
@@ -31,6 +31,5 @@ OpenHarmony内核层面直接使用Android的binder机制
 Binder的一次拷贝过程，从数据发送方的User Space通过copy\_from\_user()将数据拷贝入进程间公用内核空间的物理内存。数据接收方通过memory\_mapping（内存映射）从这块物理内存直接获取。
 
 在内核空间划分出了一块物理内存，内核空间和接收方的虚拟内存都映射在这块物理内存上，所以不需要第二次拷贝。而共享内存的0次拷贝通信，是通过发送和接收方共享同一块物理内存来实现。
-
-<figure><img src=".gitbook/assets/1719478519308.png" alt="" width="177"><figcaption></figcaption></figure>
+
 

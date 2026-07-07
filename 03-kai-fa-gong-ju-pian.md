@@ -1,4 +1,4 @@
----
+﻿---
 description: 工欲善其事必先利其器
 ---
 
@@ -14,7 +14,7 @@ description: 工欲善其事必先利其器
 
 <figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-链接：[https://gitee.com/openharmony/docs/blob/master/zh-cn/release-notes/OpenHarmony-v4.1.1-release.md](https://gitee.com/openharmony/docs/blob/master/zh-cn/release-notes/OpenHarmony-v4.1.1-release.md)
+链接：[https://gitcode.com/openharmony/docs/blob/master/zh-cn/release-notes/OpenHarmony-v4.1.1-release.md](https://gitcode.com/openharmony/docs/blob/master/zh-cn/release-notes/OpenHarmony-v4.1.1-release.md)
 
 切换每个版本都有对应版本的IDE，建议使用版本对应的IDE来进行开发。
 
@@ -28,7 +28,7 @@ description: 工欲善其事必先利其器
 
 下载链接：[https://code.visualstudio.com/](https://code.visualstudio.com/)
 
-远程连接开发：[https://gitee.com/openharmony/docs/blob/master/zh-cn/device-dev/quick-start/quickstart-ide-env-remote.md](https://gitee.com/openharmony/docs/blob/master/zh-cn/device-dev/quick-start/quickstart-ide-env-remote.md)
+远程连接开发：[https://gitcode.com/openharmony/docs/blob/master/zh-cn/device-dev/quick-start/quickstart-ide-env-remote.md](https://gitcode.com/openharmony/docs/blob/master/zh-cn/device-dev/quick-start/quickstart-ide-env-remote.md)
 
 <figure><img src=".gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -219,5 +219,4 @@ Edit GN files in Visual Studio Code，高亮GN脚本文件，作用不大，但�
     ]
 }
 ```
-
-<figure><img src=".gitbook/assets/1719478519308.png" alt="" width="177"><figcaption></figcaption></figure>
+

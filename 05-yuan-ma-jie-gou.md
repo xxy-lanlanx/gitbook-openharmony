@@ -311,5 +311,4 @@ description: 介绍源码结构
     ├── window_manager--窗口管理
     └── window_manager_lite--轻量窗口管理
 ```
-
-<figure><img src=".gitbook/assets/1719478519308.png" alt="" width="177"><figcaption></figcaption></figure>
+

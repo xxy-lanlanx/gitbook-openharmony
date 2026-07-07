@@ -29,5 +29,4 @@ description: 基于Linux图形显示之上的OpenHarmony架构
 提供了图形接口能力
 
 <figure><img src=".gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src=".gitbook/assets/1719478519308.png" alt="" width="177"><figcaption></figcaption></figure>
+

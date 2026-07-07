@@ -1,4 +1,4 @@
----
+﻿---
 description: aki的使用
 ---
 
@@ -12,7 +12,7 @@ AKI (Alpha Kernel Interacting) 是一款边界性编程体验友好的ArkTs FFI�
 
 链接：
 
-[https://gitee.com/openharmony-sig/aki](https://gitee.com/openharmony-sig/aki)
+[https://gitcode.com/openharmony-sig/aki](https://gitcode.com/openharmony-sig/aki)
 
 ## 优势
 
@@ -82,8 +82,7 @@ JSBIND_ADDON(hello) // 注册 AKI 插件名为: hello
 
 开发过程再也不用关心一大堆复杂的定义和类型转换
 
-其他使用参考文档：[https://gitee.com/openharmony-sig/aki/blob/master/README.md](https://gitee.com/openharmony-sig/aki/blob/master/README.md)
+其他使用参考文档：[https://gitcode.com/openharmony-sig/aki/blob/master/README.md](https://gitcode.com/openharmony-sig/aki/blob/master/README.md)
 
 
-
-<figure><img src=".gitbook/assets/1719478519308.png" alt="" width="177"><figcaption></figcaption></figure>
+

@@ -62,10 +62,23 @@ Xiaomi HyperOS 的技术体系下，Vela 定位为轻载硬件资源下，使用
 
 ## OpenHarmony
 
+OpenHarmony 是由开放原子开源基金会（OpenAtom）孵化、面向「全场景、全连接、全智能」的开源分布式操作系统。其核心特征可概括为：
+
+- **一套系统，弹性部署**：通过组件化设计，同一套代码可按设备资源（从 L0 轻量设备到 L5 标准富设备）裁剪组合，覆盖从百 KB 内存的微小设备到 GB 级内存的富设备。
+- **分布式架构**：以分布式软总线为底座，实现设备间能力互助与资源共享（分布式硬件、分布式数据、分布式任务调度）。
+- **开源共建**：代码开源、生态开放，任何组织与个人均可参与共建、开发与使用。
+
 ## 技术架构
 
 <figure><img src=".gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
 
+OpenHarmony 整体采用分层架构（自上而下）：
+
+- **内核层**：支持 Linux、LiteOS-A、LiteOS-M 多内核，配合 HDF 驱动框架统一硬件访问。
+- **系统服务层**：包含分布式软总线、分布式硬件/数据、图形、多媒体、位置、DFX 等子系统，以系统服务形式由 samgr 管理。
+- **框架层**：ArkUI、Ability、NAPI 等，为应用提供统一能力。
+- **应用层**：ArkTS/JS/C/C++ 应用与原子化服务。
+
 OpenHarmony的架构思路也是这样，统一型操作系统，跨设备分布式操作系统。从内核、框架、应用做了整体型的设计，更重要的是开源，让更多人都可以来共建、开发、消费这种新一代的操作系统。
 
-<figure><img src=".gitbook/assets/1719478519308.png" alt="" width="177"><figcaption></figcaption></figure>
+

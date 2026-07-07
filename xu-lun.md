@@ -5,7 +5,7 @@ description: >-
 
 # 绪论
 
-#### 初期：
+## 初期：
 
 组建团队的时候还不知道要做啥，你敢信么？
 
@@ -23,7 +23,7 @@ description: >-
 
 
 
-#### 前期：
+## 前期：
 
 过了不久，自己终于看到了gitee官网上面发布的1.0版本的代码。
 
@@ -37,7 +37,7 @@ description: >-
 
 
 
-#### 架构期：
+## 架构期：
 
 <figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -53,7 +53,7 @@ description: >-
 
 
 
-#### 中期：
+## 中期：
 
 终于发布第一版了。内心中还是很高兴的，因为漫长的努力终于迎来了一次上代码仓的时间点。
 
@@ -73,7 +73,7 @@ description: >-
 
 
 
-#### 后期：
+## 后期：
 
 东西几乎弄好了，还是不行，只能证明能用了，但是没地方用啊。那个时候才知道生态原来这么重要。
 
@@ -83,13 +83,12 @@ description: >-
 
 
 
-#### 后记：
+## 后记：
 
 千帆计划后，自己还是很开心看到这么多的APP，生态慢慢的丰富起来了，中国自有的openharmony，加油。
 
 
-
-<figure><img src=".gitbook/assets/1719478519308.png" alt="" width="177"><figcaption></figcaption></figure>
+
 
 
 

@@ -1,4 +1,4 @@
----
+﻿---
 description: OpenHarmony系统服务管理组件
 ---
 
@@ -8,7 +8,7 @@ description: OpenHarmony系统服务管理组件
 
 所有的业务子系统发起点，提供OpenHarmony系统服务启动、注册、查询等功能。
 
-服务链接：[https://gitee.com/openharmony/systemabilitymgr\_samgr](https://gitee.com/openharmony/systemabilitymgr\_samgr)
+服务链接：[https://gitcode.com/openharmony/systemabilitymgr\_samgr](https://gitcode.com/openharmony/systemabilitymgr\_samgr)
 
 ## 架构
 
@@ -47,6 +47,5 @@ SystemAbility实现一般采用XXX.cfg + profile.json + libXXX.z.so的方式由i
 ## 服务管理原理解析
 
 
-
-<figure><img src=".gitbook/assets/1719478519308.png" alt="" width="177"><figcaption></figcaption></figure>
+
 

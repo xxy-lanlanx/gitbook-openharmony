@@ -1,8 +1,8 @@
-# 14-多模输入子系统
+﻿# 14-多模输入子系统
 
 ## 简介
 
-文档参考：[https://gitee.com/openharmony/docs/blob/master/zh-cn/readme/%E5%A4%9A%E6%A8%A1%E8%BE%93%E5%85%A5%E5%AD%90%E7%B3%BB%E7%BB%9F.md](https://gitee.com/openharmony/docs/blob/master/zh-cn/readme/%E5%A4%9A%E6%A8%A1%E8%BE%93%E5%85%A5%E5%AD%90%E7%B3%BB%E7%BB%9F.md)
+文档参考：[https://gitcode.com/openharmony/docs/blob/master/zh-cn/readme/%E5%A4%9A%E6%A8%A1%E8%BE%93%E5%85%A5%E5%AD%90%E7%B3%BB%E7%BB%9F.md](https://gitcode.com/openharmony/docs/blob/master/zh-cn/readme/%E5%A4%9A%E6%A8%A1%E8%BE%93%E5%85%A5%E5%AD%90%E7%B3%BB%E7%BB%9F.md)
 
 多模输入子系统基于Linux原生驱动和HDF驱动接收设备输入事件，如键盘、鼠标、触摸屏、触摸板等， 对输入事件进行归一化和标准化后通过innerSDK分发到ArkUI框架，ArkUI框架封装事件后转发到应用，或者innerSDK通过JsKit接口直接分发事件到应用。
 
@@ -128,5 +128,4 @@ EVENT 分为EV\_ABS，EV\_KEY，EV\_SYN 三种类型
 *   `ABS_MT_TRACKING_ID`
 
     `TRACKING_ID` 标示一个触点的整个生命周期 \[5]。`TRACKING_ID` 的数值范围应该足够大，从而保证一段时间类的每一个触点标示都是唯一的。对于类型 B 设备来说，这个事件是由 INPUT 子系统核心处理，驱动应该使用 `input_mt_report_slot_state()` 函数。
-
-<figure><img src=".gitbook/assets/1719478519308.png" alt="" width="177"><figcaption></figcaption></figure>
+

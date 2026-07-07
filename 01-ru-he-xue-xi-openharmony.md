@@ -93,5 +93,4 @@ samgr组件是OpenHarmony的核心组件，提供OpenHarmony系统服务启动�
 ### 综述
 
 以上链路就是一个完整的一条线，是OpenHarmony基础的基础，优先了解此链路相关，才能完成入门的第一步。
-
-<figure><img src=".gitbook/assets/1719478519308.png" alt="" width="177"><figcaption></figcaption></figure>
+

@@ -179,5 +179,4 @@ DMS 在启动时的主要工作就是从 RenderService 获取屏幕信息，并�
 * 通知感兴趣的部件，Display 已经创建好
 * WMS 也会通过 DMS 监听 Display 的变化，比如大小变化、横竖屏变化，WMS 会通知到 WindowNodeContainer 去更新 Display 的状态并重新布局所有窗口
 * 如果遇到 BEFORE\_SUSPEND 事件，比如进入锁屏状态，WMS 会通过 WindowNodeContainer 通知每个窗口（WindowImpl）更新其状态为 STATE\_FROZEN，并告知 AMS，让持有窗口的 Ability 进入后台状态
-
-<figure><img src=".gitbook/assets/1719478519308.png" alt="" width="177"><figcaption></figcaption></figure>
+

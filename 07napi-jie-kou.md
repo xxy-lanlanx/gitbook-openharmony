@@ -16,7 +16,7 @@ NAPI 接口本身是 C++ 语言实现的，这些接口可以帮助 C++ 代码�
 
 但是OpenHarmony的napi并非是nodejs的napi，OpenHarmony 系统沿用了 NAPI 的接口定义形式，但每个接口的内部实现都进行了重写。
 
-### NAPI库的简单实现 <a href="#h_680968108_4" id="h_680968108_4"></a>
+### NAPI库的简单实现
 
 ### c++实现
 
@@ -92,7 +92,7 @@ import testNapi from 'libentry.so';
  hilog.info(0x0000, 'testTag', 'Test NAPI 2 + 3 = %{public}d', testNapi.add(2, 3));
 ```
 
-### 编译后结构 <a href="#h_680968108_4" id="h_680968108_4"></a>
+### 编译后结构
 
 <figure><img src=".gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
@@ -111,9 +111,23 @@ add_library(entry SHARED hello.cpp)
 target_link_libraries(entry PUBLIC libace_napi.z.so)
 ```
 
-### NAPI 库的导入原理 <a href="#h_680968108_4" id="h_680968108_4"></a>
+### NAPI 库的导入原理
 
+NAPI 库的「导入」本质上解决两件事：**何时把 `.so` 加载进进程**，以及**如何把 C/C++ 实现的接口挂到 JS 引擎上**。其过程可分为「模块注册」与「运行期加载」两个阶段：
 
+**1. 模块注册（编译/链接期）**
+
+- 开发者通过 `napi_module` 结构体描述一个 NAPI 模块，其中最关键的是 `nm_register_func` 初始化回调，以及模块名、`nm_version` 等元信息。
+- 在模块入口处通过 `NAPI_G_UTIL_REGISTER`（或显式调用 `napi_module_register`）完成模块注册：`nm_register_func` 内部使用 `napi_define_class` / `napi_set_named_property` 等接口，把 C/C++ 函数绑定为 JS 对象的方法或属性。
+- 模块被编译为动态库（如 `libentry.z.so`），并链接 `libace_napi.z.so` 以使用 NAPI 运行时。
+
+**2. 运行期加载（应用调用时）**
+
+- 应用侧 `import` 语句在编译期被转换为 `requireNapi` 调用；每个应用进程的 JS 引擎都预先注册了 `requireNapi` 处理函数。
+- 执行到 `requireNapi` 时，NAPI 框架的 `moduleManager` 依据模块名在 `/system/lib/module`（或应用沙箱对应路径）下定位 `.so`，通过 `dlopen()` 把库加载进应用进程。
+- 库加载后执行其注册回调，将接口挂到 JS 全局对象/模块表上，之后 JS 对该模块的调用便直达 C++ 实现。
+
+简而言之：**`import` → `requireNapi` → `moduleManager` 查找 `.so` → `dlopen` 加载 → 注册回调绑定 JS 接口**。
 
 ### 整体流程
 
@@ -205,7 +219,7 @@ void NativeModuleManager::Register(NativeModule* nativeModule)
 
 其中在 **napi\_module\_register()** 方法内部把 `mod` 中配置的 `nm_register_func` 强制转换成 `RegisterCallback` 后赋值给了 `NativeModule` 的 `registerCallback`
 
-`而`**nm\_register\_func** 就是在 `hello.cpp` 中配置的 **Init()** 方法
+而 `nm_register_func` 就是在 `hello.cpp` 中配置的 **Init()** 方法
 
 <figure><img src=".gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 
@@ -241,4 +255,4 @@ NAPI_EXTERN napi_status napi_define_properties(napi_env env,
 
 **napi\_define\_properties()** 方法内部循环遍历传递进来的每一个 `napi_property_descriptor`，把每一个 `napi_property_descriptor` 转化成 `NapiPropertyDescriptor` 的 `property` 并调用 **NapiDefineProperty()** 方法完成 JS 方法和 C++方法的映射。
 
-<figure><img src=".gitbook/assets/1719478519308.png" alt="" width="177"><figcaption></figcaption></figure>
+
