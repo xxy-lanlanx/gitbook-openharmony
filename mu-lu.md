@@ -11,6 +11,7 @@
   * 05 源码结构
   * 06 Native库
   * 07 NAPI接口
+  * 07 NAPI接口-aki
   * 08 系统samgr
   * 09 HDF驱动框架
   * 10 启动流程

@@ -16,17 +16,55 @@ Linux 是一个符合POSIX 标准的内核。它提供了一套应用程序接�
 
 <figure><img src=".gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
 
-Linux是一个单体内核，支持真正的抢占式多任务处理（于用户态，和版本2.6系列之后的内核态）、虚拟内存、共享库、请求分页、共享写时复制可执行体（通过内核同页合并）、内存管理、Internet协议族和线程等功能。
+Linux 是一个符合 POSIX 标准的单体内核，支持抢占式多任务、虚拟内存、VFS、网络协议栈与线程等功能。在 OpenHarmony 标准系统中，Linux 内核是承载富设备的基础内核，但 OpenHarmony 并非直接使用「 vanilla Linux」，而是在其之上做了若干适配与增强。
 
-设备驱动程序和内核扩展运行于内核空间（在很多CPU架构中是ring 0），可以完全访问硬件，但也有运行于用户空间的一些例外，例如基于FUSE/CUSE的文件系统，和部分UIO。多数人与Linux一起使用的图形系统不运行在内核中。与标准单体内核不同，Linux的设备驱动程序可以轻易的配置为内核模块，并在系统运行期间可直接装载或卸载。也不同于标准单体内核，设备驱动程序可以在特定条件下被抢占；增加这个特征用于正确处理硬件中断并更好的支持对称多处理。出于自愿选择，Linux内核没有二进制内核接口。
+## OpenHarmony 对 Linux 的适配与增强
 
-硬件也被集成入文件层级中。用户应用到设备驱动的接口是在/dev或/sys目录下的入口文件。进程信息也通过/proc目录映射到文件系统。
+### 1. HDF 驱动框架集成
 
-<figure><img src=".gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
+标准系统的硬件驱动不直接对接 Linux 原生驱动模型，而是通过 **HDF（Hardware Driver Foundation）** 统一接入：
 
-文档地址：[https://zh.wikipedia.org/wiki/Linux%E5%86%85%E6%A0%B8](https://zh.wikipedia.org/wiki/Linux%E5%86%85%E6%A0%B8)
+- HDF 定义了跨内核的驱动开发标准（HDI 接口），同一套驱动代码可在 Linux、LiteOS-A 等内核间复用。
+- 在 Linux 内核侧，HDF 通过 `khdf` 内核模块与 Linux 的 platform / misc / character 等子系统对接，实现驱动加载、设备树解析、中断管理等功能。
+- 用户态驱动通过 `uhdf` 运行在用户空间，通过 netlink / ioctl 与内核态 HDF 通信，减少内核漏洞面。
 
-## I/O调度器
+### 2. 内核启动链
+
+标准系统的启动流程中，Linux 内核由 `init`（`ueventd` + `init`）继续完成：
+
+- Bootloader → Linux Kernel → `start_kernel` → 挂载根文件系统 → 执行 `/system/bin/init`。
+- `init` 读取 `*.cfg` 和 `*.json`，拉起 `foundation`、`samgr` 及各系统服务进程，构建完整的 OpenHarmony 运行时。
+
+### 3. 安全增强
+
+OpenHarmony 在 Linux 内核基础上引入了安全子系统的若干增强：
+
+- **权限与 SELinux**：基于 SELinux 实现更细粒度的强制访问控制（MAC），对系统服务、应用沙箱进行隔离。
+- **设备认证**：内核启动阶段参与安全启动链，验证 bootloader 与内核镜像的签名。
+- **安全容器**：通过内核命名空间（namespace）与 cgroup 配合，构建应用级沙箱。
+
+### 4. 与 LiteOS 的多内核共存
+
+OpenHarmony 采用「一套代码，弹性部署」策略：
+
+- **轻量系统（L0）**：使用 **LiteOS-M**（无 MMU，百 KB 级内存）。
+- **小型系统（L1）**：使用 **LiteOS-A**（有 MMU，M 级内存）。
+- **标准系统（L2+）**：使用 **Linux**（GB 级内存）。
+
+Linux 内核仅在标准系统中启用，负责管理高性能 CPU、大内存、GPU、多媒体等复杂硬件。其内核配置（`defconfig`）由 OpenHarmony 根据设备类型裁剪，去除不必要的子系统与驱动，降低攻击面与内存占用。
+
+### 5. 内核源码位置
+
+标准系统对应的 Linux 内核源码位于 `kernel/linux`，具体目录包括：
+
+- `kernel/linux/linux-5.x`：Linux 内核主线源码。
+- `kernel/linux/patches`：OpenHarmony 定制的补丁（HDF 适配、安全增强、性能优化等）。
+- `drivers/hdf`：HDF 驱动框架的内核侧实现。
+
+## I/O 调度器
 
 <figure><img src=".gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
-
+
+Linux 内核支持多种 I/O 调度器（CFQ、Deadline、NOOP、BFQ 等）。OpenHarmony 标准系统根据存储介质类型（eMMC/UFS/SSD）在设备配置中选用合适的调度器，以平衡吞吐与响应时延。
+
+
