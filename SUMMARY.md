@@ -20,6 +20,7 @@
 * [07-NAPI接口](docs/02-framework/07-napi-jie-kou.md)
 * [07-NAPI接口-aki](docs/02-framework/07-napi-jie-kou-aki.md)
 * [08-系统服务管理](docs/02-framework/08-xi-tong-samgr.md)
+* [35-ArkCompiler](docs/02-framework/35-arkcompiler.md)
 
 ## 驱动与启动
 
@@ -77,3 +78,4 @@
 * [32-全球化与国际化](docs/09-build-services/32-quan-qiu-hua-zi-xi-tong.md)
 * [33-文件与存储子系统](docs/09-build-services/33-wen-jian-cun-chu-zi-xi-tong.md)
 * [34-账号与用户身份](docs/09-build-services/34-zhang-hao-yu-shen-fen.md)
+* [35-传感器子系统](docs/09-build-services/35-chuan-gan-qi-zi-xi-tong.md)
