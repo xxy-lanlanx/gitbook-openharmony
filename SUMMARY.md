@@ -67,8 +67,10 @@
 
 * [24-元能力Ability框架](docs/08-app-framework/24-ying-yong-kuang-jia-ability.md)
 * [25-包管理子系统](docs/08-app-framework/25-bao-guan-li-zi-xi-tong.md)
+* [26-WebView](docs/08-app-framework/26-webview-zi-xi-tong.md)
+* [27-输入法框架](docs/08-app-framework/27-shu-ru-fa-kuang-jia.md)
 
-## 编译与系统服务
+## 系统服务
 
 * [26-编译构建子系统](docs/09-build-services/26-bian-yi-gou-jian-zi-xi-tong.md)
 * [28-电源管理子系统](docs/09-build-services/28-dian-yuan-guan-li-zi-xi-tong.md)
@@ -78,4 +80,12 @@
 * [32-全球化与国际化](docs/09-build-services/32-quan-qiu-hua-zi-xi-tong.md)
 * [33-文件与存储子系统](docs/09-build-services/33-wen-jian-cun-chu-zi-xi-tong.md)
 * [34-账号与用户身份](docs/09-build-services/34-zhang-hao-yu-shen-fen.md)
-* [35-传感器子系统](docs/09-build-services/35-chuan-gan-qi-zi-xi-tong.md)
+* [36-电话子系统](docs/09-build-services/36-dian-hua-zi-xi-tong.md)
+
+## 传感器
+
+* [35-传感器子系统](docs/10-sensors/35-chuan-gan-qi-zi-xi-tong.md)
+
+## 高级主题
+
+* [37-性能调优](docs/11-advanced/37-xing-neng-diao-you.md)
