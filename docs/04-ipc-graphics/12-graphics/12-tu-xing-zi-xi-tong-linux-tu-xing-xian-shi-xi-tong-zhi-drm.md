@@ -29,6 +29,7 @@ DRM驱动也可以扩展API，提供特定GPU上可用的具有附加功能的�
 
 
 
+
 ![](../../../.gitbook/assets/image-9.png)
 
 
@@ -54,6 +55,54 @@ Graphics Execution Manager（GEM）是一种内存管理方法。由于视频存
 为了正常工作，显卡或者图形适配器必须设置一种模式（屏幕分辨率、颜色深度和刷新率的组合），该模式应在其自身和所连接的显示屏所支持的值的范围内。此操作称为mode-setting。通常需要对图形硬件进行原始访问，写入视频卡某些寄存器的能力。在开始使用framebuffer之前，以及在应用程序或者用户要求更改模式时，都必须执行模式设置操作。
 
 每个进程（包括X Server）都应该能够命令内核执行模式设置操作，并且内核将确保并发操作不会导致不一致的状态。添加到DRM模块以执行这些模式设置操作的新内核API和代码称为Kernel Mode-Setting(KMS)。
+
+## DRM 核心对象模型
+
+现代 DRM 子系统围绕四个核心对象组织显示硬件，便于驱动开发与上层调用：
+
+| 对象 | 作用 | 类比 |
+|------|------|------|
+| **Plane** | 图层，承载一个图像缓冲区（buffer），可叠加到 CRTC | 视频轨道、UI 图层 |
+| **CRTC** | 显示控制器，负责扫描输出、生成时序（vblank） | 显卡上的显示引擎 |
+| **Encoder** | 编码器，将 CRTC 输出的信号转换为显示器可识别的格式（如 HDMI/TTL/DSI） | 信号转换器 |
+| **Connector** | 连接器，代表物理显示接口（HDMI、DP、eDP、DSI） | 物理接口本身 |
+
+显示流程：`Buffer → Plane → CRTC → Encoder → Connector → 显示器`。合成器（如 Rosen）将多个应用的 Surface 合成为最终帧，通过 DRM 的 `Atomic Commit` 一次性更新 Plane 与 CRTC 配置，保证画面一致性。
+
+## DRM 在 OpenHarmony 中的角色
+
+OpenHarmony 标准系统的显示 HDI（Hardware Driver Interface）底层通常基于 DRM 实现：
+
+- **显示 HDI 实现层**：向上对接 Render Service / 合成器，向下调用 DRM libdrm 接口完成图层配置、缓冲区提交、模式设置；
+- **GPU 渲染结果**：Render Service 将合成后的帧缓冲区（GBM/DRM buffer）绑定到 DRM Plane，通过 KMS 送显；
+- **兼容性**：不同芯片平台（如 Mali、Adreno、PowerVR）的 DRM 驱动差异由 HDI 层屏蔽，上层图形栈保持统一。
+
+DRM 设备节点通常位于 `/dev/dri/card0`，`card0` 是主显示设备，`renderD128` 是无显示权限的纯渲染节点（供 GPU 渲染使用，避免应用直接操作显示状态）。
+
+## libdrm 与调试
+
+libdrm 的作用就是将内核功能封装成一系列的 open/close/ioctl 等标准接口，应用程序调用这些接口来驱动设备实现画面显示。绝大部分操作可以分成两类：
+
+- **GEM（Graphics Execution Manager）**：显存管理，如显存的分配和释放；
+- **KMS（Kernel Mode-Setting）**：显示模式管理，如分辨率、刷新率、图层配置。
+
+是 linux 内核对显示框架进行分层设计的思想，相比于直接操作 fb，drm 框架提供更多的功能，包含图层合成、CMA、VSYNC 等，而且架构更方便驱动人员维护和使用。
+
+### 常用调试方法
+
+```bash
+# 查看 DRM 设备与连接器状态
+cat /sys/kernel/debug/dri/0/state
+
+# 查看当前显示模式（分辨率、刷新率）
+cat /sys/class/drm/card0-HDMI-A-1/modes
+
+# 查看 GPU/DRM 日志
+dmesg | grep -i drm
+
+# 使用 modetest（libdrm 工具）测试显示模式
+modetest -M <driver_name> -s <connector_id>@<crtc_id>:<mode>
+```
 
 ## Hardware support
 
@@ -85,3 +134,5 @@ libdrm的作用就是将内核功能封装成 一系列的open/close/ioctl 等�
 
 - [图形子系统-openharmony](../12-tu-xing-zi-xi-tong-openharmony.md)
 - [图形子系统-Linux图形显示系统](../12-tu-xing-zi-xi-tong-linux-tu-xing-xian-shi-xi-tong.md)
+- [图形子系统-GPU适配](../12-tu-xing-zi-xi-tong-gpu-shi-pei.md)
+- [HDF驱动框架](../../../03-driver-boot/09-hdf-qu-dong-kuang-jia.md)
