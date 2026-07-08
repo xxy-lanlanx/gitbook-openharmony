@@ -14,7 +14,7 @@ description: 图形子系统-openharmony
 
 
 
-![](../../../assets/image-45.png)
+![](../../../.gitbook/assets/image-45.png)
 
 
 
@@ -40,7 +40,7 @@ description: 图形子系统-openharmony
 
 
 
-![](../../../assets/image-46.png)
+![](../../../.gitbook/assets/image-46.png)
 
 ## 定位与适用场景
 

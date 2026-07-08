@@ -10,7 +10,7 @@ description: 内核子系统-Linux内核架构
 
 
 
-![](../../../assets/image-79.png)
+![](../../../.gitbook/assets/image-79.png)
 
 
 
@@ -30,7 +30,7 @@ description: 内核子系统-Linux内核架构
 
 
 
-![](../../../assets/image-80.png)
+![](../../../.gitbook/assets/image-80.png)
 
 
 

@@ -20,7 +20,7 @@ description: 分布式硬件
 
 
 
-![](../../assets/image-67.png)
+![](../../.gitbook/assets/image-67.png)
 
 
 

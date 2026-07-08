@@ -20,7 +20,7 @@ description: 架构篇
 
 
 
-![](../../assets/1718112671377.png)
+![](../../.gitbook/assets/1718112671377.png)
 
 
 
@@ -36,25 +36,25 @@ description: 架构篇
 
 以几个子服务为例
 
-![](.gitbook/assets/image-18.png)
+![](../../.gitbook/assets/image-18.png)
 
-![](.gitbook/assets/image-19.png)
-
-
-
-![](../../assets/image-18.png)
+![](../../.gitbook/assets/image-19.png)
 
 
 
-
-
-![](../../assets/image-19.png)
+![](../../.gitbook/assets/image-18.png)
 
 
 
 
 
-![](../../assets/image-20.png)
+![](../../.gitbook/assets/image-19.png)
+
+
+
+
+
+![](../../.gitbook/assets/image-20.png)
 
 
 
@@ -72,7 +72,7 @@ description: 架构篇
 
 
 
-![](../../assets/image-21.png)
+![](../../.gitbook/assets/image-21.png)
 
 
 

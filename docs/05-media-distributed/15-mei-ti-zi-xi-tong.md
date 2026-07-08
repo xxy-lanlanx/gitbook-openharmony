@@ -20,7 +20,7 @@ description: 媒体子系统
 
 
 
-![](../../assets/image.png)
+![](../../.gitbook/assets/image.png)
 
 
 
@@ -43,7 +43,7 @@ description: 媒体子系统
 
 
 
-![](../../assets/image-1.png)
+![](../../.gitbook/assets/image-1.png)
 
 
 
@@ -73,7 +73,7 @@ gstreamer跟ffmpeg一样，也是一个媒体框架，可以实现采集，编�
 
 
 
-![](../../assets/image-2.png)
+![](../../.gitbook/assets/image-2.png)
 
 ## 相关阅读
 

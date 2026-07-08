@@ -25,7 +25,7 @@ AKI (Alpha Kernel Interacting) 是一款边界性编程体验友好的ArkTs FFI�
 
 
 
-![](../../assets/image-3-1-1-1-1.png)
+![](../../.gitbook/assets/image-3-1-1-1-1.png)
 
 
 
@@ -164,7 +164,7 @@ this.message = aki.SayHello("hello world");
 
 
 
-![](../../assets/image-30.png)
+![](../../.gitbook/assets/image-30.png)
 
 
 

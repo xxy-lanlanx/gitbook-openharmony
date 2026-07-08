@@ -14,7 +14,7 @@ description: 分布式数据管理
 
 
 
-![](../../assets/image-66.png)
+![](../../.gitbook/assets/image-66.png)
 
 
 

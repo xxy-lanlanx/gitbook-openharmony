@@ -10,7 +10,7 @@ description: 图形子系统-GPU适配
 
 
 
-![](../../../assets/渲染GPU架构图-1.png)
+![](../../../.gitbook/assets/渲染GPU架构图-1.png)
 
 
 

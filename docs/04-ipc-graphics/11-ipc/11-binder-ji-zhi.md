@@ -12,12 +12,12 @@ Binder机制通常采用客户端-服务器（Client-Server）模型，服务请
 
 ## 框架
 
-![](.gitbook/assets/image-37.png)
+![](../../../.gitbook/assets/image-37.png)
 
 
 
 
-![](../../../assets/image-37.png)
+![](../../../.gitbook/assets/image-37.png)
 
 
 
@@ -39,25 +39,25 @@ Binder机制通常采用客户端-服务器（Client-Server）模型，服务请
 
 OpenHarmony内核层面直接使用Android的binder机制
 
-![](.gitbook/assets/image-42.png)
+![](../../../.gitbook/assets/image-42.png)
 
-![](.gitbook/assets/image-43.png)
-
-
-
-![](../../../assets/image-42.png)
+![](../../../.gitbook/assets/image-43.png)
 
 
 
-
-
-![](../../../assets/image-43.png)
+![](../../../.gitbook/assets/image-42.png)
 
 
 
 
 
-![](../../../assets/image-44.png)
+![](../../../.gitbook/assets/image-43.png)
+
+
+
+
+
+![](../../../.gitbook/assets/image-44.png)
 
 
 

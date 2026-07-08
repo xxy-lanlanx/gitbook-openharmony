@@ -14,7 +14,7 @@ OpenHarmony 轻量级内核是基于IoT领域轻量级物联网操作系统Huawe
 
 
 
-![](../../../assets/image-59.png)
+![](../../../.gitbook/assets/image-59.png)
 
 
 

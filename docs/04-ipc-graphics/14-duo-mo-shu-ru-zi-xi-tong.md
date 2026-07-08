@@ -12,18 +12,18 @@ description: 多模输入子系统
 
 ## 架构
 
-![](.gitbook/assets/image-48.png)
+![](../../.gitbook/assets/image-48.png)
 
 
 
 
-![](../../assets/image-48.png)
+![](../../.gitbook/assets/image-48.png)
 
 
 
 
 
-![](../../assets/image-49.png)
+![](../../.gitbook/assets/image-49.png)
 
 
 
@@ -35,7 +35,7 @@ description: 多模输入子系统
 
 
 
-![](../../assets/image-50.png)
+![](../../.gitbook/assets/image-50.png)
 
 
 
@@ -53,7 +53,7 @@ Linux内核调通后，生成/dev/input/event4节点
 
 
 
-![](../../assets/image-51.png)
+![](../../.gitbook/assets/image-51.png)
 
 
 
@@ -83,7 +83,7 @@ libinput库：[https://wayland.freedesktop.org/libinput/doc/latest/api/?login=fr
 
 
 
-![](../../assets/image-52.png)
+![](../../.gitbook/assets/image-52.png)
 
 
 
@@ -95,7 +95,7 @@ EVENT 分为EV\_ABS，EV\_KEY，EV\_SYN 三种类型
 
 
 
-![](../../assets/image-53.png)
+![](../../.gitbook/assets/image-53.png)
 
 
 
@@ -110,18 +110,18 @@ EVENT 分为EV\_ABS，EV\_KEY，EV\_SYN 三种类型
 
 单点的DOWN，MOVE事件
 
-![](.gitbook/assets/image-54.png)
+![](../../.gitbook/assets/image-54.png)
 
 
 
 
-![](../../assets/image-54.png)
+![](../../.gitbook/assets/image-54.png)
 
 
 
 
 
-![](../../assets/image-55.png)
+![](../../.gitbook/assets/image-55.png)
 
 
 
@@ -133,7 +133,7 @@ EVENT 分为EV\_ABS，EV\_KEY，EV\_SYN 三种类型
 
 
 
-![](../../assets/image-56.png)
+![](../../.gitbook/assets/image-56.png)
 
 
 
@@ -151,7 +151,7 @@ EVENT 分为EV\_ABS，EV\_KEY，EV\_SYN 三种类型
 
 
 
-![](../../assets/image-57.png)
+![](../../.gitbook/assets/image-57.png)
 
 
 

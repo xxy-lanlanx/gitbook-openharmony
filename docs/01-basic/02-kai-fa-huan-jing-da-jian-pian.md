@@ -24,7 +24,7 @@ tag版本地址：[https://gitcode.com/openharmony/docs/blob/master/zh-cn/releas
 
 
 
-![](../../assets/image-1-1-1-1-1-1-1-1-1-1.png)
+![](../../.gitbook/assets/image-1-1-1-1-1-1-1-1-1-1.png)
 
 
 
@@ -38,7 +38,7 @@ tag版本地址：[https://gitcode.com/openharmony/docs/blob/master/zh-cn/releas
 
 
 
-![](../../assets/image-1-1-1-1-1-1-1-1-1-1-1.png)
+![](../../.gitbook/assets/image-1-1-1-1-1-1-1-1-1-1-1.png)
 
 
 
@@ -117,7 +117,7 @@ bash build/prebuilts_download.sh
 
 
 
-![](../../assets/image-1-1-1-1-1-1-1-1-1.png)
+![](../../.gitbook/assets/image-1-1-1-1-1-1-1-1-1.png)
 
 
 

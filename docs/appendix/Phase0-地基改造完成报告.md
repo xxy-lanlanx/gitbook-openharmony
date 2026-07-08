@@ -10,7 +10,7 @@
 | 1 | 统一文件名 | 7 个粘连命名（06/07/09/11/20/21 等）重命名为 `NN-topic.md`；SUMMARY/mu-lu 链接同步更新 |
 | 2 | SUMMARY 嵌套分组 | 11（IPC+Binder）、12（图形 4 篇）、19（内核 4 篇）已缩进分组 |
 | 3 | 对齐 mu-lu | mu-lu.md 与 SUMMARY 分组/文件名/标题完全一致，消除两套目录 |
-| 4 | 图片语法迁移 | 122 张 GitBook `<figure>` 私有语法 → 标准 Markdown `![alt](../../assets/...)`，0 断图 |
+| 4 | 图片语法迁移 | 122 张 GitBook `<figure>` 私有语法 → 标准 Markdown `![alt](../../.gitbook/assets/...)`，0 断图 |
 | 5 | 补充 frontmatter | 30 篇补齐/修正 YAML `description`（取自 H1）；修复历史累积的重复块 + 双重编码 BOM（ï»¿） |
 | 6 | 预埋章节互链 | 30 篇末尾新增 `## 相关阅读`，互链图形↔窗口↔输入、分布式软总线↔数据↔硬件、内核↔启动↔HDF、NAPI↔源码↔native 等 |
 | 7 | 验证 | 全量校验脚本通过（见下） |

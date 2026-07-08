@@ -26,7 +26,7 @@ description: 如何学习openharmony？
 
 
 
-![](../../assets/image-1-1-1-1-1-1-1-1-1-1-1-1-1.png)
+![](../../.gitbook/assets/image-1-1-1-1-1-1-1-1-1-1-1-1-1.png)
 
 
 
@@ -42,7 +42,7 @@ description: 如何学习openharmony？
 
 
 
-![](../../assets/image-2-1-1-1-1-1-1-1-1-1.png)
+![](../../.gitbook/assets/image-2-1-1-1-1-1-1-1-1-1.png)
 
 
 
@@ -64,7 +64,7 @@ description: 如何学习openharmony？
 
 
 
-![](../../assets/image-3-1-1-1-1-1-1-1.png)
+![](../../.gitbook/assets/image-3-1-1-1-1-1-1-1.png)
 
 
 
@@ -80,7 +80,7 @@ description: 如何学习openharmony？
 
 
 
-![](../../assets/image-4-1-1-1-1-1.png)
+![](../../.gitbook/assets/image-4-1-1-1-1-1.png)
 
 
 
@@ -104,7 +104,7 @@ NAPI适合封装IO、CPU密集型、OS底层等能力并对外暴露JS接口，�
 
 
 
-![](../../assets/image-2-1-1-1-1-1-1-1.png)
+![](../../.gitbook/assets/image-2-1-1-1-1-1-1-1.png)
 
 
 
@@ -124,7 +124,7 @@ samgr组件是OpenHarmony的核心组件，提供OpenHarmony系统服务启动�
 
 
 
-![](../../assets/image-1-1-1-1-1-1-1-1-1-1-1-1.png)
+![](../../.gitbook/assets/image-1-1-1-1-1-1-1-1-1-1-1-1.png)
 
 
 
@@ -138,7 +138,7 @@ samgr组件是OpenHarmony的核心组件，提供OpenHarmony系统服务启动�
 
 
 
-![](../../assets/image-2-1-1-1-1-1-1-1-1.png)
+![](../../.gitbook/assets/image-2-1-1-1-1-1-1-1-1.png)
 
 
 

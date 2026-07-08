@@ -14,7 +14,7 @@ Direct Rendering Manager(DRM)是linux内核子系统，负责与显卡交互。 
 
 
 
-![](../../../assets/image-8-1.png)
+![](../../../.gitbook/assets/image-8-1.png)
 
 
 
@@ -24,18 +24,18 @@ Direct Rendering Manager(DRM)是linux内核子系统，负责与显卡交互。 
 
 DRM驱动也可以扩展API，提供特定GPU上可用的具有附加功能的附加ioctl。当特定的DRM驱动程序提供增强的API时，用户空间libdrm也将通过一个额外的库libdrm-driver扩展，这个扩展库可以被用户空间用来调用其他ioctl接口。
 
-![](.gitbook/assets/image-9.png)
+![](../../../.gitbook/assets/image-9.png)
 
 
 
 
-![](../../../assets/image-9.png)
+![](../../../.gitbook/assets/image-9.png)
 
 
 
 
 
-![](../../../assets/image-11.png)
+![](../../../.gitbook/assets/image-11.png)
 
 
 
@@ -61,7 +61,7 @@ Graphics Execution Manager（GEM）是一种内存管理方法。由于视频存
 
 
 
-![](../../../assets/image-10.png)
+![](../../../.gitbook/assets/image-10.png)
 
 
 
@@ -79,7 +79,7 @@ libdrm的作用就是将内核功能封装成 一系列的open/close/ioctl 等�
 
 
 
-![](../../../assets/image-12.png)
+![](../../../.gitbook/assets/image-12.png)
 
 ## 相关阅读
 

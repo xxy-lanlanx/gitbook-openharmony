@@ -18,7 +18,7 @@ DisPlay：屏幕属性提供管理显示设备的一些基础能力，包括获�
 
 
 
-![](../../assets/image-4.png)
+![](../../.gitbook/assets/image-4.png)
 
 
 
@@ -38,7 +38,7 @@ DisPlay：屏幕属性提供管理显示设备的一些基础能力，包括获�
 
 
 
-![](../../assets/image-1-1.png)
+![](../../.gitbook/assets/image-1-1.png)
 
 
 
@@ -52,7 +52,7 @@ DisPlay：屏幕属性提供管理显示设备的一些基础能力，包括获�
 
 
 
-![](../../assets/image-2-1.png)
+![](../../.gitbook/assets/image-2-1.png)
 
 
 
@@ -66,7 +66,7 @@ Windows 3.0 于 1990 年发布。该版本褪去了大部分 MS-DOS 系统的东
 
 
 
-![](../../assets/image-3-1.png)
+![](../../.gitbook/assets/image-3-1.png)
 
 
 
@@ -80,7 +80,7 @@ Windows 3.0 于 1990 年发布。该版本褪去了大部分 MS-DOS 系统的东
 
 
 
-![](../../assets/image-4-1.png)
+![](../../.gitbook/assets/image-4-1.png)
 
 
 
@@ -94,7 +94,7 @@ Windows 3.0 于 1990 年发布。该版本褪去了大部分 MS-DOS 系统的东
 
 
 
-![](../../assets/image-5.png)
+![](../../.gitbook/assets/image-5.png)
 
 
 
@@ -195,18 +195,18 @@ WindowNodeContainer 与 Display 一一对应，其管理了单个 Display 中的
 
 OH 目前支持两种策略，CASCADE（层叠）与 TILE（平铺）。默认的布局策略是 CASCADE，分屏显示也会将策略切换至 CASCADE。布局策略的主要能力就是决定窗口的排列布局方式、位置与大小。两种策略的区别如下：
 
-![](.gitbook/assets/image-6.png)
+![](../../.gitbook/assets/image-6.png)
 
 
 
 
-![](../../assets/image-6.png)
+![](../../.gitbook/assets/image-6.png)
 
 
 
 
 
-![](../../assets/image-7.png)
+![](../../.gitbook/assets/image-7.png)
 
 
 

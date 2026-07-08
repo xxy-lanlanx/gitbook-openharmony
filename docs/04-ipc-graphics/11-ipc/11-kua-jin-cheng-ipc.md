@@ -14,7 +14,7 @@ OpenHarmony是基于Linux系统上的，先了解一下Linux中的IPC通信原�
 
 
 
-![](../../../assets/image-39.png)
+![](../../../.gitbook/assets/image-39.png)
 
 
 
@@ -22,12 +22,12 @@ OpenHarmony是基于Linux系统上的，先了解一下Linux中的IPC通信原�
 
 ## Binder IPC 原理
 
-![](.gitbook/assets/image-40.png)
+![](../../../.gitbook/assets/image-40.png)
 
 
 
 
-![](../../../assets/image-40.png)
+![](../../../.gitbook/assets/image-40.png)
 
 
 
@@ -55,7 +55,7 @@ IPC通信包括客户端(client)和服务端(service)。
 
 
 
-![](../../../assets/image-41.png)
+![](../../../.gitbook/assets/image-41.png)
 
 
 

@@ -22,7 +22,7 @@ WLAN服务：为用户提供WLAN基础功能、P2P（peer-to-peer）功能和WLA
 
 
 
-![](../../assets/image-65.png)
+![](../../.gitbook/assets/image-65.png)
 
 
 

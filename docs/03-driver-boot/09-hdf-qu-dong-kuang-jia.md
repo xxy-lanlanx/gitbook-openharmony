@@ -14,18 +14,18 @@ OpenHarmony 系统 HDF 驱动框架采用 C 语言面向对象编程模型构建
 
 OpenHarmony驱动框架采用主从架构设计模式，围绕着框架、模型、能力库和工具四个维度能力展开构建。
 
-![](.gitbook/assets/image-5-1-1.png)
+![](../../.gitbook/assets/image-5-1-1.png)
 
 
 
 
-![](../../assets/image-5-1-1.png)
+![](../../.gitbook/assets/image-5-1-1.png)
 
 
 
 
 
-![](../../assets/image-1-1-1-1-1.png)
+![](../../.gitbook/assets/image-1-1-1-1-1.png)
 
 
 
@@ -53,7 +53,7 @@ HDF驱动框架：提供统一的硬件资源管理、驱动加载管理、设�
 
 
 
-![](../../assets/image-1-1-1-1-1-1.png)
+![](../../.gitbook/assets/image-1-1-1-1-1-1.png)
 
 
 
@@ -323,7 +323,7 @@ peripheral HDI接口实现
 
 
 
-![](../../assets/image-2-1-1-1-1.png)
+![](../../.gitbook/assets/image-2-1-1-1-1.png)
 
 ## 相关阅读
 

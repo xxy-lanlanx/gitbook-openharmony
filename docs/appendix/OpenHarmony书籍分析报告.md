@@ -16,7 +16,7 @@
 | 拉丁词数 | ≈ 7,472 词 |
 | 一级~六级标题总数 | 275 个 |
 | 代码块 | 30 个（仅集中在少数章节） |
-| 图片（`![](../../assets/image-45.png)`。该写法依赖 GitBook Classic 渲染；若将来迁移到 VitePress / Hugo / GitBook Next 等静态生成器，这类带空格与括号的资源路径和 `<figure>` 标签可能**无法渲染**。建议逐步转为标准 Markdown `![](path)` 或通用 HTML `<img>`。
+| 图片（`![](../../.gitbook/assets/image-45.png)`。该写法依赖 GitBook Classic 渲染；若将来迁移到 VitePress / Hugo / GitBook Next 等静态生成器，这类带空格与括号的资源路径和 `<figure>` 标签可能**无法渲染**。建议逐步转为标准 Markdown `![](path)` 或通用 HTML `<img>`。
 
 ### 🟡 P2 — 章节内部结构化不足
 `19-内核-Linux内核架构`（4 标题）、`19-内核-小型`（4）、`19-内核-轻量`（4）、`15-媒体`（6）、`12-图形-openharmony`（3）等篇标题数偏少，读起来是"一整块散文"而非分节文档，检索与阅读体验差。

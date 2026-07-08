@@ -12,18 +12,18 @@ description: 系统samgr
 
 ## 架构
 
-![](.gitbook/assets/image-38.png)
+![](../../.gitbook/assets/image-38.png)
 
 
 
 
-![](../../assets/image-38.png)
+![](../../.gitbook/assets/image-38.png)
 
 
 
 
 
-![](../../assets/image-31.png)
+![](../../.gitbook/assets/image-31.png)
 
 
 
@@ -45,7 +45,7 @@ description: 系统samgr
 
 
 
-![](../../assets/image-34.png)
+![](../../.gitbook/assets/image-34.png)
 
 
 
@@ -59,7 +59,7 @@ description: 系统samgr
 
 
 
-![](../../assets/image-33.png)
+![](../../.gitbook/assets/image-33.png)
 
 
 
@@ -67,18 +67,18 @@ description: 系统samgr
 
 ### 实现
 
-![](.gitbook/assets/image-35.png)
+![](../../.gitbook/assets/image-35.png)
 
 
 
 
-![](../../assets/image-35.png)
+![](../../.gitbook/assets/image-35.png)
 
 
 
 
 
-![](../../assets/image-36.png)
+![](../../.gitbook/assets/image-36.png)
 
 
 

@@ -14,7 +14,7 @@ description: native库
 
 
 
-![](../../assets/image-2-1-1-1-1-1.png)
+![](../../.gitbook/assets/image-2-1-1-1-1-1.png)
 
 
 
@@ -28,7 +28,7 @@ description: native库
 
 
 
-![](../../assets/image-1-1-1-1-1-1-1-1.png)
+![](../../.gitbook/assets/image-1-1-1-1-1-1-1-1.png)
 
 
 
@@ -54,7 +54,7 @@ target_link_libraries(entry PUBLIC libace_napi.z.so)
 
 
 
-![](../../assets/image-2-1-1-1-1-1-1.png)
+![](../../.gitbook/assets/image-2-1-1-1-1-1-1.png)
 
 
 
@@ -80,7 +80,7 @@ target_link_libraries(entry PUBLIC libace_napi.z.so)
 
 
 
-![](../../assets/image-3-1-1-1-1-1.png)
+![](../../.gitbook/assets/image-3-1-1-1-1-1.png)
 
 
 
@@ -96,12 +96,12 @@ SIG社区给了广大开发者经一个非常好用的答案，另外在这个�
 
 lycium是一款协助开发者通过shell语言实现C/C++三方库快速交叉编译，并在OpenHarmony 系统上快速验证的编译框架工具。开发者只需要设置对应C/C++三方库的编译方式以及编译参数，通过lycium就能快速的构建出能在OpenHarmony 系统运行的二进制文件。
 
-![](.gitbook/assets/image-6-1-1.png)
+![](../../.gitbook/assets/image-6-1-1.png)
 
 
 
 
-![](../../assets/image-6-1-1.png)
+![](../../.gitbook/assets/image-6-1-1.png)
 
 
 
@@ -121,7 +121,7 @@ lycium是一个编译环境自行搭建的也是一个非常麻烦的事情。
 
 
 
-![](../../assets/image-7-1-1.png)
+![](../../.gitbook/assets/image-7-1-1.png)
 
 
 

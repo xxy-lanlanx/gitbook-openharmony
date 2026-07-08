@@ -10,7 +10,7 @@ description: 启动流程
 
 
 
-![](../../assets/image-13.png)
+![](../../.gitbook/assets/image-13.png)
 
 
 
@@ -34,7 +34,7 @@ SOC启动时都由bootloader来加载镜像，具体过程包括以下几个大�
 
 
 
-![](../../assets/image-1-1-1-1.png)
+![](../../.gitbook/assets/image-1-1-1-1.png)
 
 
 
@@ -46,7 +46,7 @@ SOC启动时都由bootloader来加载镜像，具体过程包括以下几个大�
 
 
 
-![](../../assets/image-2-1-1-1.png)
+![](../../.gitbook/assets/image-2-1-1-1.png)
 
 
 
@@ -58,7 +58,7 @@ SOC启动时都由bootloader来加载镜像，具体过程包括以下几个大�
 
 
 
-![](../../assets/image-3-1-1-1.png)
+![](../../.gitbook/assets/image-3-1-1-1.png)
 
 
 
@@ -94,7 +94,7 @@ earlycon=uart8250,mmio32,0xfe660000 root=PARTUUID=614e0000-0000 rw rootwait root
 
 
 
-![](../../assets/image-4-1-1-1.png)
+![](../../.gitbook/assets/image-4-1-1-1.png)
 
 
 

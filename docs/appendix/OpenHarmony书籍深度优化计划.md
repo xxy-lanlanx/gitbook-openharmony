@@ -85,7 +85,7 @@
 目的：让后续扩充有整洁、可维护的底座，避免边写边返工。
 - [ ] **统一文件名**为 `NN-topic.md`：`06native-ku`→`06-native-ku`、`09hdf…`→`09-hdf-…`、`20dfx`→`20-dfx-…`、`21xts`→`21-xts-…`、`07napi…`→`07-napi-…`、`11binder`→`11-binder-…`。
 - [ ] **SUMMARY 嵌套分组**：把 11（IPC/Binder）、12（图形 4 篇）、19（内核 4 篇）在 SUMMARY 内缩进成子节点；废弃或对齐 `mu-lu.md`（消除两套目录）。
-- [ ] **图片语法迁移**：`<figure><img …></figure>` → 标准 `![alt](../../assets/xxx.png)`，降低未来迁移风险。
+- [ ] **图片语法迁移**：`<figure><img …></figure>` → 标准 `![alt](../../.gitbook/assets/xxx.png)`，降低未来迁移风险。
 - [ ] **补 frontmatter**：每篇加 `description:`，便于站点摘要。
 - [ ] 预埋**章节互链**占位（先标出应互链的章节对）。
 

@@ -18,7 +18,7 @@ Linux 是一个符合POSIX 标准的内核。它提供了一套应用程序接�
 
 
 
-![](../../../assets/image-60.png)
+![](../../../.gitbook/assets/image-60.png)
 
 
 
@@ -75,7 +75,7 @@ Linux 内核仅在标准系统中启用，负责管理高性能 CPU、大内存�
 
 
 
-![](../../../assets/image-62.png)
+![](../../../.gitbook/assets/image-62.png)
 
 
 

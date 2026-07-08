@@ -20,7 +20,7 @@ description: 开发工具篇
 
 
 
-![](../../assets/image-5-1-1-1-1.png)
+![](../../.gitbook/assets/image-5-1-1-1-1.png)
 
 
 
@@ -46,7 +46,7 @@ description: 开发工具篇
 
 
 
-![](../../assets/image-6-1-1-1.png)
+![](../../.gitbook/assets/image-6-1-1-1.png)
 
 
 
@@ -66,7 +66,7 @@ C++开发必备
 
 
 
-![](../../assets/image-7-1-1-1.png)
+![](../../.gitbook/assets/image-7-1-1-1.png)
 
 
 
@@ -76,18 +76,18 @@ C++开发必备
 
 因为repo管理是超大型项目的一个总集管理，此插件便于我们查看不同git仓库的历史
 
-![](.gitbook/assets/image-9-1.png)
+![](../../.gitbook/assets/image-9-1.png)
 
 
 
 
-![](../../assets/image-9-1.png)
+![](../../.gitbook/assets/image-9-1.png)
 
 
 
 
 
-![](../../assets/image-10-1.png)
+![](../../.gitbook/assets/image-10-1.png)
 
 
 
@@ -101,7 +101,7 @@ Remote - SSH
 
 
 
-![](../../assets/image-11-1.png)
+![](../../.gitbook/assets/image-11-1.png)
 
 
 
@@ -115,7 +115,7 @@ Edit GN files in Visual Studio Code，高亮GN脚本文件，作用不大，但�
 
 
 
-![](../../assets/image-12-1.png)
+![](../../.gitbook/assets/image-12-1.png)
 
 
 

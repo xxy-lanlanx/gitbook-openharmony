@@ -1,5 +1,6 @@
 # GitBook 构建/缓存目录（非源码，重新构建会再生）
-.gitbook/
+.gitbook/*
+!.gitbook/assets/
 _book/
 
 # 依赖

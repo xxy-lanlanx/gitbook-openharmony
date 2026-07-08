@@ -19,7 +19,7 @@ Nodejs 官网（[https://nodejs.org/dist/latest-v20.x/docs/api/n-api.html](https
 
 
 
-![](../../assets/image-22.png)
+![](../../.gitbook/assets/image-22.png)
 
 
 
@@ -235,7 +235,7 @@ import testNapi from 'libentry.so';
 
 
 
-![](../../assets/image-23.png)
+![](../../.gitbook/assets/image-23.png)
 
 
 
@@ -302,25 +302,25 @@ NAPI 库的「导入」本质上解决两件事：**何时把 `.so` 加载进进
 
 ### 整体流程
 
-![](.gitbook/assets/image-25.png)
+![](../../.gitbook/assets/image-25.png)
 
-![](.gitbook/assets/image-26.png)
-
-
-
-![](../../assets/image-25.png)
+![](../../.gitbook/assets/image-26.png)
 
 
 
-
-
-![](../../assets/image-26.png)
+![](../../.gitbook/assets/image-25.png)
 
 
 
 
 
-![](../../assets/image-27.png)
+![](../../.gitbook/assets/image-26.png)
+
+
+
+
+
+![](../../.gitbook/assets/image-27.png)
 
 
 
@@ -332,7 +332,7 @@ NAPI 库的「导入」本质上解决两件事：**何时把 `.so` 加载进进
 
 
 
-![](../../assets/image-24.png)
+![](../../.gitbook/assets/image-24.png)
 
 
 
@@ -346,7 +346,7 @@ NAPI 库的「导入」本质上解决两件事：**何时把 `.so` 加载进进
 
 
 
-![](../../assets/image-28.png)
+![](../../.gitbook/assets/image-28.png)
 
 
 
@@ -550,7 +550,7 @@ void NativeModuleManager::Register(NativeModule* nativeModule)
 
 
 
-![](../../assets/image-29.png)
+![](../../.gitbook/assets/image-29.png)
 
 
 

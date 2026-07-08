@@ -14,7 +14,7 @@ Linux视窗架构
 
 
 
-![](../../../assets/image-47.png)
+![](../../../.gitbook/assets/image-47.png)
 
 
 
@@ -26,7 +26,7 @@ Linux视窗架构
 
 
 
-![](../../../assets/image-1-1-1.png)
+![](../../../.gitbook/assets/image-1-1-1.png)
 
 
 
@@ -38,7 +38,7 @@ Wayland实现流程，以及X11通过XWayland实现流程
 
 
 
-![](../../../assets/image-8.png)
+![](../../../.gitbook/assets/image-8.png)
 
 
 
@@ -52,7 +52,7 @@ Wayland实现流程，以及X11通过XWayland实现流程
 
 
 
-![](../../../assets/image-2-1-1.png)
+![](../../../.gitbook/assets/image-2-1-1.png)
 
 
 
@@ -64,7 +64,7 @@ Wayland实现流程，以及X11通过XWayland实现流程
 
 
 
-![](../../../assets/image-3-1-1.png)
+![](../../../.gitbook/assets/image-3-1-1.png)
 
 
 
@@ -80,7 +80,7 @@ libdrm的作用就是将内核功能封装成 一系列的open/close/ioctl 等�
 
 
 
-![](../../../assets/image-4-1-1.png)
+![](../../../.gitbook/assets/image-4-1-1.png)
 
 
 
@@ -98,7 +98,7 @@ OpenGL体系架构可以通过基于状态的pipeline表达，命令从左侧进
 
 
 
-![](../../../assets/image-5-1.png)
+![](../../../.gitbook/assets/image-5-1.png)
 
 
 
@@ -114,7 +114,7 @@ Mesa内部分为Graphics API层和用户空间驱动层。Graphics API层实现�
 
 
 
-![](../../../assets/image-6-1.png)
+![](../../../.gitbook/assets/image-6-1.png)
 
 
 
@@ -126,7 +126,7 @@ Mesa内部分为Graphics API层和用户空间驱动层。Graphics API层实现�
 
 
 
-![](../../../assets/image-7-1.png)
+![](../../../.gitbook/assets/image-7-1.png)
 
 ## Linux 图形栈总览
 

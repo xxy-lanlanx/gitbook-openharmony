@@ -18,7 +18,7 @@
 |--------|------|
 | README.md 落地页 | ✅ 存在 |
 | SUMMARY.md 格式（38 项，10 项缩进分组） | ✅ 合法（3 个无链接项为 11/12/19 的分组父标题，属正常） |
-| 图片语法 | ✅ 已全部为标准 Markdown `![alt](../../assets/...)`，无 `<figure>` 残留 |
+| 图片语法 | ✅ 已全部为标准 Markdown `![alt](../../.gitbook/assets/...)`，无 `<figure>` 残留 |
 | 图片断链 | ✅ 0（110 张引用全部命中） |
 | 私有/插件语法 | ✅ 仅 `{% code %}`/`{% endcode %}`/`{% embed %}` —— 均为 GitBook 原生标签，无需额外插件 |
 | YAML frontmatter | ✅ 30/30 章节含 `description`（legacy GitBook 默认忽略页面 frontmatter，不影响构建） |
@@ -43,7 +43,7 @@
 
 ```
 章节数: 30
-图片引用(../../assets/): 110 | 断图: 0
+图片引用(../../.gitbook/assets/): 110 | 断图: 0
 book.json / .gitignore / README / SUMMARY: 齐备
 ✅ 全部检查通过：GitBook 架构完全适配（gitbook-cli）
 ```

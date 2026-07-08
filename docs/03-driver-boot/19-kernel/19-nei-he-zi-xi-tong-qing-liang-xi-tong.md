@@ -16,7 +16,7 @@ OpenHarmony LiteOS-M内核架构包含硬件相关层以及硬件无关层，如
 
 
 
-![](../../../assets/image-58.png)
+![](../../../.gitbook/assets/image-58.png)
 
 
 
