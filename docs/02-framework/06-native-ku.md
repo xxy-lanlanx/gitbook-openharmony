@@ -2,23 +2,11 @@
 description: native库
 ---
 
-# 06-native库
-
-
-
-
+# 06-Native库
 
 ## 前言
 
-
-
-
-
 本章并非完全介绍应用开发，因为很多时候c++侧都不是开发业务，都是引入一些高效好用的第三方库来使用。
-
-
-
-
 
 ## native开发
 
@@ -34,10 +22,6 @@ description: native库
 
 使用应用开发工具建立一个C++工程。
 
-
-
-
-
 最简单结构
 
 
@@ -52,15 +36,7 @@ description: native库
 
 就是常见的cmake结构，使用CMakeLists.txt来做编译
 
-
-
-
-
 可以看到这个里面引入一个
-
-
-
-
 
 ```cmake
 
@@ -70,15 +46,7 @@ target_link_libraries(entry PUBLIC libace_napi.z.so)
 
 ```
 
-
-
-
-
 这就是链接js和c++通信最重要的一个组件库。
-
-
-
-
 
 怎么引入更多系统库呢？大家可以打开这里：
 
@@ -94,27 +62,11 @@ target_link_libraries(entry PUBLIC libace_napi.z.so)
 
 {% embed url="https://docs.openharmony.cn/pages/v4.1/zh-cn/application-dev/napi/ndk-development-overview.md" %}
 
-
-
-
-
 有非常详细的文档。
-
-
-
-
 
 ## 引入第三方库
 
-
-
-
-
 本章重点不是介绍官方重复的东西。
-
-
-
-
 
 如何自己引入很多已经使用很久，但是鸿蒙生态还未集成的库呢？
 
@@ -136,30 +88,15 @@ target_link_libraries(entry PUBLIC libace_napi.z.so)
 
 最根本的还是使用交叉编译链。
 
-
-
-
-
 但是怎么能够快速引入呢？
-
-
-
-
 
 SIG社区给了广大开发者经一个非常好用的答案，另外在这个仓库里面也已经集成了很多很多库，若是还需要其他仓库，也可以使用这套工具来集成，非常方便。
 
-
-
-
-
 ### lycium 交叉编译框架
-
-
-
-
 
 lycium是一款协助开发者通过shell语言实现C/C++三方库快速交叉编译，并在OpenHarmony 系统上快速验证的编译框架工具。开发者只需要设置对应C/C++三方库的编译方式以及编译参数，通过lycium就能快速的构建出能在OpenHarmony 系统运行的二进制文件。
 
+![](.gitbook/assets/image-6-1-1.png)
 
 
 
@@ -178,10 +115,6 @@ lycium是一款协助开发者通过shell语言实现C/C++三方库快速交叉�
 
 lycium是一个编译环境自行搭建的也是一个非常麻烦的事情。
 
-
-
-
-
 官方贴心的给出了docke编译环境
 
 
@@ -196,15 +129,7 @@ lycium是一个编译环境自行搭建的也是一个非常麻烦的事情。
 
 ### HPKBUILD
 
-
-
-
-
 最重要的一个文件，如何引入一个仓库，然后能够快速生成一个应用可用的第三方库
-
-
-
-
 
 ```gn
 

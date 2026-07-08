@@ -4,18 +4,11 @@ description: NAPI接口
 
 # 07-NAPI接口
 
-
-
-
-
 ## 简介
-
-
-
-
 
 NAPI 的概念源自 Nodejs，为了实现 javascript 脚本与 C++ 库之间的相互调用，Nodejs 对 V8 引擎的 api 做了一层封装，称为 NAPI。
 
+Nodejs 官网（[https://nodejs.org/dist/latest-v20.x/docs/api/n-api.html](https://link.zhihu.com/?target=https%3A//nodejs.org/dist/latest-v20.x/docs/api/n-api.html)）上查看各种 NAPI 接口定义说明。
 
 
 
@@ -34,27 +27,11 @@ NAPI 的概念源自 Nodejs，为了实现 javascript 脚本与 C++ 库之间的
 
 NAPI 接口本身是 C++ 语言实现的，这些接口可以帮助 C++ 代码创建 JS 变量，或访问 JavaScript 运行环境中的 JS 变量与方法。
 
-
-
-
-
 但是OpenHarmony的napi并非是nodejs的napi，OpenHarmony 系统沿用了 NAPI 的接口定义形式，但每个接口的内部实现都进行了重写。
-
-
-
-
 
 ### NAPI库的简单实现
 
-
-
-
-
 ### c++实现
-
-
-
-
 
 ```cpp
 
@@ -226,15 +203,7 @@ extern "C" __attribute__((constructor)) void RegisterEntryModule(void)
 
 ```
 
-
-
-
-
 ### ts接口定义
-
-
-
-
 
 ```javascript
 
@@ -244,15 +213,7 @@ export const add: (a: number, b: number) => number;
 
 ```
 
-
-
-
-
 ### 接口使用
-
-
-
-
 
 ```javascript
 
@@ -267,10 +228,6 @@ import testNapi from 'libentry.so';
 
 
 ```
-
-
-
-
 
 ### 编译后结构
 
@@ -325,67 +282,29 @@ target_link_libraries(entry PUBLIC libace_napi.z.so)
 
 ```
 
-
-
-
-
 ### NAPI 库的导入原理
-
-
-
-
 
 NAPI 库的「导入」本质上解决两件事：**何时把 `.so` 加载进进程**，以及**如何把 C/C++ 实现的接口挂到 JS 引擎上**。其过程可分为「模块注册」与「运行期加载」两个阶段：
 
-
-
-
-
 **1. 模块注册（编译/链接期）**
 
-
-
-
-
-- 开发者通过 `napi_module` 结构体描述一个 NAPI 模块，其中最关键的是 `nm_register_func` 初始化回调，以及模块名、`nm_version` 等元信息。
-
-
-- 在模块入口处通过 `NAPI_G_UTIL_REGISTER`（或显式调用 `napi_module_register`）完成模块注册：`nm_register_func` 内部使用 `napi_define_class` / `napi_set_named_property` 等接口，把 C/C++ 函数绑定为 JS 对象的方法或属性。
-
-
-- 模块被编译为动态库（如 `libentry.z.so`），并链接 `libace_napi.z.so` 以使用 NAPI 运行时。
-
-
-
-
+* 开发者通过 `napi_module` 结构体描述一个 NAPI 模块，其中最关键的是 `nm_register_func` 初始化回调，以及模块名、`nm_version` 等元信息。
+* 在模块入口处通过 `NAPI_G_UTIL_REGISTER`（或显式调用 `napi_module_register`）完成模块注册：`nm_register_func` 内部使用 `napi_define_class` / `napi_set_named_property` 等接口，把 C/C++ 函数绑定为 JS 对象的方法或属性。
+* 模块被编译为动态库（如 `libentry.z.so`），并链接 `libace_napi.z.so` 以使用 NAPI 运行时。
 
 **2. 运行期加载（应用调用时）**
 
-
-
-
-
-- 应用侧 `import` 语句在编译期被转换为 `requireNapi` 调用；每个应用进程的 JS 引擎都预先注册了 `requireNapi` 处理函数。
-
-
-- 执行到 `requireNapi` 时，NAPI 框架的 `moduleManager` 依据模块名在 `/system/lib/module`（或应用沙箱对应路径）下定位 `.so`，通过 `dlopen()` 把库加载进应用进程。
-
-
-- 库加载后执行其注册回调，将接口挂到 JS 全局对象/模块表上，之后 JS 对该模块的调用便直达 C++ 实现。
-
-
-
-
+* 应用侧 `import` 语句在编译期被转换为 `requireNapi` 调用；每个应用进程的 JS 引擎都预先注册了 `requireNapi` 处理函数。
+* 执行到 `requireNapi` 时，NAPI 框架的 `moduleManager` 依据模块名在 `/system/lib/module`（或应用沙箱对应路径）下定位 `.so`，通过 `dlopen()` 把库加载进应用进程。
+* 库加载后执行其注册回调，将接口挂到 JS 全局对象/模块表上，之后 JS 对该模块的调用便直达 C++ 实现。
 
 简而言之：**`import` → `requireNapi` → `moduleManager` 查找 `.so` → `dlopen` 加载 → 注册回调绑定 JS 接口**。
 
-
-
-
-
 ### 整体流程
 
+![](.gitbook/assets/image-25.png)
 
+![](.gitbook/assets/image-26.png)
 
 
 
@@ -421,10 +340,6 @@ NAPI 库的「导入」本质上解决两件事：**何时把 `.so` 加载进进
 
 每个应用进程的 JS 引擎中，都注册了一个 “requireNapi” 函数，当应用调用此方法时，JS 引擎就会通过 NAPI 框架的 moduleManager 类去处理 so 库的加载。moduleManager 内部最终是找到了 /system/lib/module 下对应的 so 文件，并通过 dlopen () 的方式加载到应用进程中。
 
-
-
-
-
 而index.ets 被编译成 index.js 后，import 关键字也被转为了 “requireNapi”，这样 JS 引擎在执行这行代码时，就会去调用注册的导入处理函数了。
 
 
@@ -438,10 +353,6 @@ NAPI 库的「导入」本质上解决两件事：**何时把 `.so` 加载进进
 
 
 当调用 **dlopen()** 方法加载 `libentry.so` 时，会先调用 **RegisterEntryModule()** 方法，在该方法内部调用了 **napi\_module\_register()**
-
-
-
-
 
 ```cpp
 
@@ -505,15 +416,7 @@ NAPI_EXTERN void napi_module_register(napi_module* mod)
 
 ```
 
-
-
-
-
 注册
-
-
-
-
 
 ```cpp
 
@@ -637,21 +540,9 @@ void NativeModuleManager::Register(NativeModule* nativeModule)
 
 ```
 
-
-
-
-
-&#x20;**Register()** 方法负责把传递进来的 `NativeModule` 加入链表的末尾。
-
-
-
-
+**Register()** 方法负责把传递进来的 `NativeModule` 加入链表的末尾。
 
 其中在 **napi\_module\_register()** 方法内部把 `mod` 中配置的 `nm_register_func` 强制转换成 `RegisterCallback` 后赋值给了 `NativeModule` 的 `registerCallback`
-
-
-
-
 
 而 `nm_register_func` 就是在 `hello.cpp` 中配置的 **Init()** 方法
 
@@ -666,10 +557,6 @@ void NativeModuleManager::Register(NativeModule* nativeModule)
 
 
 这里会再调用napi\_define\_properties（）方法
-
-
-
-
 
 ```cpp
 
@@ -750,10 +637,6 @@ NAPI_EXTERN napi_status napi_define_properties(napi_env env,
 
 
 ```
-
-
-
-
 
 **napi\_define\_properties()** 方法内部循环遍历传递进来的每一个 `napi_property_descriptor`，把每一个 `napi_property_descriptor` 转化成 `NapiPropertyDescriptor` 的 `property` 并调用 **NapiDefineProperty()** 方法完成 JS 方法和 C++方法的映射。
 
